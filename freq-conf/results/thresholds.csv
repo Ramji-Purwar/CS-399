@@ -1,0 +1,15 @@
+active_cores,from_pstate,to_pstate,transition,threshold_billions,found
+28,0,1,"P0 (Turbo) → P1 (2.1 GHz)",-1,no
+28,1,2,"P1 (2.1 GHz) → P2 (2.0 GHz)",-1,no
+28,2,3,"P2 (2.0 GHz) → P3 (1.9 GHz)",-1,no
+28,3,4,"P3 (1.9 GHz) → P4 (1.8 GHz)",-1,no
+28,4,5,"P4 (1.8 GHz) → P5 (1.7 GHz)",-1,no
+28,5,6,"P5 (1.7 GHz) → P6 (1.6 GHz)",-1,no
+28,6,7,"P6 (1.6 GHz) → P7 (1.5 GHz)",-1,no
+28,7,8,"P7 (1.5 GHz) → P8 (1.4 GHz)",-1,no
+28,8,9,"P8 (1.4 GHz) → P9 (1.3 GHz)",-1,no
+28,9,10,"P9 (1.3 GHz) → P10 (1.2 GHz)",-1,no
+28,10,11,"P10 (1.2 GHz) → P11 (1.1 GHz)",-1,no
+28,11,12,"P11 (1.1 GHz) → P12 (1.0 GHz)",-1,no
+28,12,13,"P12 (1.0 GHz) → P13 (0.9 GHz)",-1,no
+28,13,14,"P13 (0.9 GHz) → P14 (0.8 GHz)",-1,no
