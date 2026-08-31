@@ -1,9 +1,17 @@
 # AVX-512 Frequency Throttling Characterization
 
 ## Project Overview
-This project characterizes the dynamic frequency scaling (throttling) behavior of modern Intel processors (specifically the Intel Xeon Gold 5512U "Emerald Rapids", 28C/56T) when executing extremely dense AVX-512 workloads. 
+This project characterizes the dynamic frequency scaling (throttling) behavior of modern Intel processors when executing extremely dense AVX-512 workloads. 
 
-Historically, executing 512-bit wide vector math drew so much current that Intel CPUs applied severe, immediate frequency penalties (AVX-512 licenses) to prevent thermal runaway. This experiment was designed to bypass operating system reporting flaws and map exactly how frequency degrades under maximum physical AVX-512 FMA (Fused Multiply-Add) port pressure across varying core counts.
+Historically, executing 512-bit wide vector math drew so much current that Intel CPUs applied severe, immediate frequency penalties (AVX-512 licenses) to prevent thermal runaway. This throttling not only affected the AVX-512 workload itself but also degraded the performance of non-AVX threads running on the same socket (the "noisy neighbor" effect). Understanding this scaling behavior is critical for HPC and Cloud workload scheduling.
+
+This experiment was designed to bypass operating system reporting flaws and map exactly how frequency degrades under maximum physical AVX-512 FMA (Fused Multiply-Add) port pressure across varying core counts.
+
+### Hardware Specifications
+* **CPU:** Intel Xeon Gold 5512U (Emerald Rapids)
+* **Topology:** 28 Physical Cores / 56 Threads
+* **Base Frequency:** 2.1 GHz | **Max Turbo:** 3.7 GHz
+* **Compiler:** `g++` with `-O3 -march=native -mavx512f`
 
 ---
 
@@ -12,15 +20,28 @@ Historically, executing 512-bit wide vector math drew so much current that Intel
 The experimental design evolved through several iterations as we uncovered the underlying behavior of the hardware and the limitations of the Linux OS frequency governors.
 
 ### 1. The Workload Kernel (Maximizing Silicon Power Draw)
-To force the CPU to draw maximum power and trigger PCU (Power Control Unit) throttling, we cannot simply execute random math; we must perfectly saturate the execution units without stalling. We achieved this through two critical micro-architectural optimizations in `workload_kernel.cpp`:
+To force the CPU to draw maximum power and trigger PCU (Power Control Unit) throttling, we cannot simply execute random math; we must perfectly saturate the execution units without stalling. We achieved this through specific micro-architectural optimizations in `workload_kernel.cpp`.
 
-* **Hiding Memory Latency (Register-Only Execution):**
+#### What is the AVX-512 FMA Instruction?
+FMA stands for **Fused Multiply-Add**. It performs a multiplication and an addition in a single hardware step `(A * B) + C`. 
+Because we are using AVX-512, the hardware registers (`ZMM` registers) are 512 bits wide. Since a standard single-precision float is 32 bits, one AVX-512 register holds exactly 16 floats. 
+
+Therefore, a single AVX-512 FMA instruction performs **16 independent multiplications and 16 independent additions simultaneously in a single clock cycle**. 
+* **C++ Intrinsic Used:** `_mm512_fmadd_ps(acc, mul, add)`
+* **Assembly Translation:** `vfmadd231ps zmm0, zmm1, zmm2`
+
+By repeatedly firing this instruction, we force the floating-point Arithmetic Logic Units (ALUs) to draw the absolute maximum physical current allowed by the silicon.
+
+#### Optimization A: Hiding Memory Latency (Register-Only Execution)
   If an FMA loop relies on loading data from the CPU L1/L2 cache or RAM before doing a calculation, the execution pipes will stall for several nanoseconds waiting for the memory controller. To keep the power consumption pinned at 100% every single clock cycle, we eliminated memory latency entirely. All variables in our inner loop are initialized directly into the core's private 512-bit physical registers (ZMM registers). No memory loads or stores occur during the measurement phase.
 
-* **Forcing Max Port Pressure (Utilizing Both FMA Ports):**
+#### Optimization B: Forcing Max Port Pressure (Utilizing Both FMA Ports)
   Modern high-end Xeon processors have two independent 512-bit FMA execution blocks per physical core, sitting on Port 0 and Port 5 of the execution engine. If a loop structure forces a serial dependency (e.g., calculation #2 needs the result of calculation #1), the processor can only use one port at a time, leaving the other block idle.
   The AVX-512 FMA instruction (`vfmadd231ps`) has a latency of 4 clock cycles. To break serial dependencies and saturate the pipeline, we explicitly unrolled the loop and interleaved **8 completely independent calculation chains** (`acc0` through `acc7`). 
   Because there are no dependencies between these registers, the hardware's out-of-order execution engine schedules two completely independent FMA operations on Port 0 and Port 5 simultaneously, every single clock cycle. This instantly doubles the local current draw on the core, achieving the theoretical maximum FMA pressure a Xeon can physically sustain.
+
+#### Optimization C: Defeating Dead Code Elimination (DCE)
+  Modern compilers (`g++ -O3`) are incredibly aggressive at deleting code that doesn't produce a used output. If we just looped arbitrary math, the compiler would delete the entire AVX-512 loop at compile-time. To force the silicon to physically execute the instructions, we iteratively multiply by `1.0000001f` and add `0.0f`. This forces the values to continuously evolve without hitting floating-point `NaN` or `Infinity` (which would cause hardware ALU stalls), and we dump the final accumulator sum into a `volatile` sink at the end of the execution block to guarantee the compiler emits the assembly.
 
 ### 2. Burst-Based Sweep and Thermal Reset
 Modern Intel PCUs manage heat and turbo frequencies using PL1/PL2 power limits and EWMA (Exponentially Weighted Moving Averages) over time.
