@@ -36,7 +36,6 @@ std::vector<int> parse_int_list(const std::string& s) {
 
 int main(int argc, char* argv[]) {
     Config config;
-    config.core_counts  = {1, 2, 4, 8, 14, 28};
     config.core_counts  = {1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28};
     config.out_csv      = "results/sweep_data.csv";
     

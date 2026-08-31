@@ -5,31 +5,30 @@ import sys
 from collections import defaultdict
 import xml.etree.ElementTree as ET
 
-def generate_svg(data, out_path="results/sweep_plot.svg"):
-    # data is a dict: cores -> list of (burst_billions, freq_ghz)
+def generate_svg(data, out_path="results/cores_plot.svg"):
+    # data is a dict: cores -> list of frequencies
     if not data:
         print("No data to plot.")
         return
 
+    # Compute average frequency for each core count
+    avg_freqs = {}
+    for cores, freqs in data.items():
+        avg_freqs[cores] = sum(freqs) / len(freqs)
+
     width = 900
     height = 500
-    margin = {"top": 40, "right": 150, "bottom": 60, "left": 80}
+    margin = {"top": 40, "right": 40, "bottom": 60, "left": 80}
     plot_width = width - margin["left"] - margin["right"]
     plot_height = height - margin["top"] - margin["bottom"]
 
-    # Find max/min
-    all_bursts = []
-    all_freqs = []
-    for cores, pts in data.items():
-        for b, f in pts:
-            all_bursts.append(b)
-            all_freqs.append(f)
-
-    max_x = max(all_bursts) if all_bursts else 50.0
+    sorted_cores = sorted(avg_freqs.keys())
+    
+    max_x = 28
     min_x = 0
-    max_y = max(all_freqs) if all_freqs else 4.0
-    # Add a little headroom for max_y
-    max_y = ((int(max_y * 10) + 2) / 10.0) 
+    
+    all_freqs = list(avg_freqs.values())
+    max_y = 4.0
     min_y = 0.0
 
     def x_to_svg(x):
@@ -51,13 +50,14 @@ def generate_svg(data, out_path="results/sweep_plot.svg"):
                   x2=str(margin["left"]), y2=str(margin["top"] + plot_height),
                   stroke="black", stroke_width="2")
 
-    # X-axis ticks (every 5B)
-    for x_tick in range(0, int(max_x) + 1, max(1, int(max_x)//10)):
+    # X-axis ticks (every 2 cores)
+    for x_tick in range(0, max_x + 1, 2):
         sx = x_to_svg(x_tick)
         sy = margin["top"] + plot_height
         ET.SubElement(svg, "line", x1=str(sx), y1=str(sy), x2=str(sx), y2=str(sy+5), stroke="black")
-        lbl = ET.SubElement(svg, "text", x=str(sx), y=str(sy+20), text_anchor="middle", font_family="sans-serif", font_size="12")
-        lbl.text = str(x_tick)
+        if x_tick > 0:
+            lbl = ET.SubElement(svg, "text", x=str(sx), y=str(sy+20), text_anchor="middle", font_family="sans-serif", font_size="12")
+            lbl.text = str(x_tick)
 
     # Y-axis ticks (every 0.5 GHz)
     y_tick = 0.0
@@ -74,42 +74,29 @@ def generate_svg(data, out_path="results/sweep_plot.svg"):
 
     # Labels
     title = ET.SubElement(svg, "text", x=str(width/2), y="25", text_anchor="middle", font_family="sans-serif", font_size="16", font_weight="bold")
-    title.text = "AVX-512 Frequency Throttling vs Burst Size"
+    title.text = "All-Core AVX-512 Turbo Frequency vs Number of Active Cores"
 
     x_label = ET.SubElement(svg, "text", x=str(margin["left"] + plot_width/2), y=str(height - 15), text_anchor="middle", font_family="sans-serif", font_size="14")
-    x_label.text = "Burst Size (Billions of AVX-512 FMA Instructions)"
+    x_label.text = "Number of Active Cores"
 
     y_label = ET.SubElement(svg, "text", x="25", y=str(margin["top"] + plot_height/2), text_anchor="middle", font_family="sans-serif", font_size="14", transform=f"rotate(-90 25 {margin['top'] + plot_height/2})")
-    y_label.text = "Frequency (GHz)"
+    y_label.text = "Average Frequency (GHz)"
 
-    # Plot data
-    colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]
+    # Plot data (Draw line)
+    color = "#d62728"
+    path_d = []
+    for j, cores in enumerate(sorted_cores):
+        f = avg_freqs[cores]
+        cmd = "M" if j == 0 else "L"
+        path_d.append(f"{cmd} {x_to_svg(cores)} {y_to_svg(f)}")
     
-    legend_y = margin["top"]
-    sorted_cores = sorted(data.keys())
+    if path_d:
+        ET.SubElement(svg, "path", d=" ".join(path_d), fill="none", stroke=color, stroke_width="3")
     
-    for i, cores in enumerate(sorted_cores):
-        pts = sorted(data[cores])
-        color = colors[i % len(colors)]
-        
-        # Draw line
-        path_d = []
-        for j, (b, f) in enumerate(pts):
-            cmd = "M" if j == 0 else "L"
-            path_d.append(f"{cmd} {x_to_svg(b)} {y_to_svg(f)}")
-        
-        path = ET.SubElement(svg, "path", d=" ".join(path_d), fill="none", stroke=color, stroke_width="2")
-        
-        # Draw dots
-        for b, f in pts:
-            ET.SubElement(svg, "circle", cx=str(x_to_svg(b)), cy=str(y_to_svg(f)), r="3", fill=color)
-            
-        # Legend
-        lx = margin["left"] + plot_width + 20
-        ly = legend_y + i * 25
-        ET.SubElement(svg, "rect", x=str(lx), y=str(ly-5), width="15", height="10", fill=color)
-        llbl = ET.SubElement(svg, "text", x=str(lx+25), y=str(ly+4), font_family="sans-serif", font_size="12")
-        llbl.text = f"{cores} Core{'s' if cores>1 else ''}"
+    # Draw dots
+    for cores in sorted_cores:
+        f = avg_freqs[cores]
+        ET.SubElement(svg, "circle", cx=str(x_to_svg(cores)), cy=str(y_to_svg(f)), r="5", fill=color)
 
     tree = ET.ElementTree(svg)
     tree.write(out_path)
@@ -126,9 +113,12 @@ def main():
             reader = csv.DictReader(f)
             for row in reader:
                 c = int(row["active_cores"])
+                # We ignore burst size and just collect all frequencies for this core count
+                # Optional: exclude the 0.0B burst if you want strictly active AVX-512 measurements
                 b = float(row["burst_billions"])
-                fq = float(row["freq_ghz"])
-                data[c].append((b, fq))
+                if b > 0:
+                    fq = float(row["freq_ghz"])
+                    data[c].append(fq)
     except Exception as e:
         print(f"Failed to read CSV {csv_file}: {e}")
         return
