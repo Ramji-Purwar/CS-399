@@ -182,7 +182,7 @@ Result run_trial(uint64_t operand) {
 
 void benchmark() {
     const uint64_t OP_ZERO = 0x0000000000000000ULL;
-    const uint64_t OP_AA   = 0xAAAAAAAAAAAAAAAAULL;
+    const uint64_t OP_AA   = 0xAAAAAAAAAAAAAAABULL;
 
     fprintf(stderr, "Running on %d cores simultaneously\n", NUM_CORES);
     fprintf(stderr, "Warming up 0x00...\n");
