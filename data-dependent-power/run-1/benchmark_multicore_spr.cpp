@@ -7,8 +7,6 @@
 #include <fcntl.h>
 #include <iomanip>
 #include <iostream>
-#include <fstream>
-#include <string>
 #include <pthread.h>
 #include <sched.h>
 #include <unistd.h>
@@ -182,53 +180,41 @@ Result run_trial(uint64_t operand) {
     return {mean_t, std_t, pkg_J, dram_J, cores_J, pkg_W, cores_W};
 }
 
-void benchmark(const string &label, uint64_t operand, ostream &out) {
-    fprintf(stderr, "Running on %d cores simultaneously\n", NUM_CORES);
-    fprintf(stderr, "Warming up %s...\n", label.c_str());
-    for (int w = 0; w < WARMUP_RUNS; ++w) run_trial(operand);
+void benchmark() {
+    const uint64_t OP_ZERO = 0x0000000000000000ULL;
+    const uint64_t OP_AA   = 0xAAAAAAAAAAAAAAABULL;
 
-    out << "operand,trial,mean_time_s,std_time_s,pkg_J,dram_J,cores_J,pkg_W,cores_W\n";
+    fprintf(stderr, "Running on %d cores simultaneously\n", NUM_CORES);
+    fprintf(stderr, "Warming up 0x00...\n");
+    for (int w = 0; w < WARMUP_RUNS; ++w) run_trial(OP_ZERO);
+    fprintf(stderr, "Warming up 0xAA...\n");
+    for (int w = 0; w < WARMUP_RUNS; ++w) run_trial(OP_AA);
+
+    cout << "operand,trial,mean_time_s,std_time_s,pkg_J,dram_J,cores_J,pkg_W,cores_W\n";
     fprintf(stderr, "Starting benchmark (%d trials)...\n", TRIALS);
 
     for (int trial = 0; trial < TRIALS; ++trial) {
         if (trial % 10 == 0) fprintf(stderr, "trial %d/%d\n", trial, TRIALS);
 
-        Result r = run_trial(operand);
+        Result r0 = run_trial(OP_ZERO);
+        Result rA = run_trial(OP_AA);
 
-        out << fixed << setprecision(9)
-            << label << "," << trial << "," << r.mean_time_s << "," << r.std_time_s << ","
-            << r.pkg_J << "," << r.dram_J << "," << r.cores_J << ","
-            << r.pkg_W << "," << r.cores_W << "\n";
-        out.flush();
+        cout << fixed << setprecision(9)
+             << "0x00," << trial << "," << r0.mean_time_s << "," << r0.std_time_s << ","
+             << r0.pkg_J << "," << r0.dram_J << "," << r0.cores_J << ","
+             << r0.pkg_W << "," << r0.cores_W << "\n"
+             << "0xAA," << trial << "," << rA.mean_time_s << "," << rA.std_time_s << ","
+             << rA.pkg_J << "," << rA.dram_J << "," << rA.cores_J << ","
+             << rA.pkg_W << "," << rA.cores_W << "\n";
+        cout.flush();
     }
 }
 
-int main(int argc, char *argv[]) {
-    if (argc != 2 || (string(argv[1]) != "0x00" && string(argv[1]) != "0xAA")) {
-        fprintf(stderr, "Usage: %s <0x00|0xAA>\n", argv[0]);
-        return EXIT_FAILURE;
-    }
-
-    string label = argv[1];
-    uint64_t operand = (label == "0x00")
-                            ? 0x0000000000000000ULL
-                            : 0xAAAAAAAAAAAAAAABULL;
-
+int main() {
     read_energy_uj(RAPL_PKG_FILE);
     read_energy_uj(RAPL_DRAM_FILE);
 
     fprintf(stderr, "Expected SNR improvement: ~%dx vs single core\n", NUM_CORES);
-
-    string csv_name = "benchmark_" + label + ".csv";
-    ofstream out(csv_name);
-    if (!out.is_open()) {
-        fprintf(stderr, "failed to open %s for writing\n", csv_name.c_str());
-        return EXIT_FAILURE;
-    }
-
-    benchmark(label, operand, out);
-
-    out.close();
-    fprintf(stderr, "Results written to %s\n", csv_name.c_str());
+    benchmark();
     return 0;
 }

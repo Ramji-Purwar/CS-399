@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 from pathlib import Path
 
-# Load data — benchmark.cpp now writes one CSV per operand instead of a
-# single combined file, so read both and stack them.
-here = Path(__file__).parent
-op00 = pd.read_csv(here / "benchmark_0x00.csv")
-opAA = pd.read_csv(here / "benchmark_0xAA.csv")
-df = pd.concat([op00, opAA], ignore_index=True)
+# Load data
+df = pd.read_csv(Path(__file__).with_name("results_spr.csv"))
+
+# Separate by operand
+op00 = df[df["operand"] == "0x00"]
+opAA = df[df["operand"] == "0xAA"]
 
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(7, 8))
 fig.subplots_adjust(hspace=0.4)
