@@ -1,27 +1,25 @@
 #!/usr/bin/env bash
 # =============================================================================
-# run_freq_sweep.sh  —  IMUL power/time vs CPU frequency sweep
+# run_freq_sweep.sh  —  Multi-Kernel Power & Time vs CPU Frequency Sweep
 #
 # Hardware: Intel Xeon Gold 5512U (Emerald Rapids), 28 physical cores, SPR
 # Driver:   intel_pstate (active), min=800 MHz, base=2100 MHz, max=3700 MHz
 #
-# What it does:
-#   1. Disables Turbo Boost so the PCU won't override our frequency setting.
-#   2. For each target frequency (kHz):
-#       a. Locks scaling_min_freq = scaling_max_freq = target to pin the P-state.
-#       b. Waits for the hardware to settle.
-#       c. Runs the benchmark binary for operand 0x00, then 0xAA.
-#       d. Uses a temp file per run; strips its header and appends to master.
-#       e. Deletes the temp file immediately after appending.
-#   3. Restores the system to its original state via a trap on EXIT/INT/TERM.
+# Kernels swept (each instruction has its own separate CSV):
+#   - imulq   -> results/frequency_sweep_imulq.csv
+#   - addq    -> results/frequency_sweep_addq.csv
+#   - mulps   -> results/frequency_sweep_mulps.csv
+#   - avx512  -> results/frequency_sweep_avx512.csv
+#
+# Operands swept:
+#   - 0x00    : all-zero bit pattern (minimal ALU toggles)
+#   - 0xAA    : alternating bit pattern (maximal ALU toggles)
+#
+# All CSV files and temporary files stay strictly inside CS-399/freq-throttling/
+# with open read/write permissions so regular users can analyze and plot.
 #
 # Usage:
 #   sudo ./run_freq_sweep.sh
-#
-# Output:
-#   results/frequency_sweep_results.csv  — single CSV with ALL data
-#   Columns: freq_mhz, operand, trial, mean_time_s, std_time_s,
-#            pkg_J, dram_J, cores_J, pkg_W, cores_W
 # =============================================================================
 
 set -euo pipefail
@@ -29,18 +27,36 @@ set -euo pipefail
 # ── Privilege check ──────────────────────────────────────────────────────────
 if [[ "$EUID" -ne 0 ]]; then
     echo "ERROR: This script must be run as root (sudo ./run_freq_sweep.sh)."
-    echo "       It needs to write to /sys/devices/system/cpu/*/cpufreq/."
+    echo "       It needs root privileges to write to /sys/devices/system/cpu/*/cpufreq/."
     exit 1
 fi
 
-# ── Configuration ─────────────────────────────────────────────────────────────
-BINARY="./benchmark"               # compiled binary (must be in same dir or PATH)
-RESULTS_DIR="./results"
-SETTLE_SECONDS=3                   # seconds to wait after changing frequency
-COOL_BETWEEN_OPERANDS=2            # seconds between the two operand runs
+# ── Paths strictly within CS-399 workspace ───────────────────────────────────
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BINARY="${SCRIPT_DIR}/benchmark"
+RESULTS_DIR="${SCRIPT_DIR}/results"
+mkdir -p "${RESULTS_DIR}"
 
-# Frequencies to test (in kHz).
-# Range is 800–2100 MHz (no turbo). Adjust step size as needed.
+# Ensure anyone can read/write results inside CS-399 regardless of umask
+chmod 777 "${RESULTS_DIR}" 2>/dev/null || true
+
+SETTLE_SECONDS=3                   # seconds to wait after changing frequency
+COOL_BETWEEN_RUNS=2                # seconds to wait between benchmark runs
+
+# ── Sweep Parameters ─────────────────────────────────────────────────────────
+KERNELS=(
+    "imulq"
+    "addq"
+    "mulps"
+    "avx512"
+)
+
+OPERANDS=(
+    "0x00"
+    "0xAA"
+)
+
+# Frequencies to sweep (in kHz): 800 MHz to 2100 MHz (base clock)
 FREQS_KHZ=(
     800000    #  800 MHz
     1000000   # 1000 MHz
@@ -49,16 +65,12 @@ FREQS_KHZ=(
     1600000   # 1600 MHz
     1800000   # 1800 MHz
     2000000   # 2000 MHz
-    2100000   # 2100 MHz  (base clock)
+    2100000   # 2100 MHz (base clock)
 )
 
-OPERANDS=("0x00" "0xAA")
-
-MASTER_CSV="${RESULTS_DIR}/frequency_sweep_results.csv"
-MASTER_HEADER="freq_mhz,operand,trial,mean_time_s,std_time_s,pkg_J,dram_J,cores_J,pkg_W,cores_W"
+CSV_HEADER="kernel,freq_mhz,operand,trial,mean_time_s,std_time_s,pkg_J,dram_J,cores_J,pkg_W,cores_W"
 
 # ── Restore original system state on exit ────────────────────────────────────
-# Save current values so cleanup restores exactly what was there before.
 ORIG_NO_TURBO=$(cat /sys/devices/system/cpu/intel_pstate/no_turbo)
 ORIG_GOV=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)
 ORIG_EPP=$(cat /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference)
@@ -67,88 +79,111 @@ ORIG_MAX=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq)
 
 cleanup() {
     echo ""
-    echo "==> Restoring CPU to original state..."
-    # Unlock min/max BEFORE restoring turbo/governor so there are no
-    # ordering conflicts (e.g. min > max during intermediate states).
+    echo "==> Restoring CPU configuration to default state..."
     echo "${ORIG_MIN}" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_min_freq > /dev/null
     echo "${ORIG_MAX}" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq > /dev/null
     echo "${ORIG_NO_TURBO}" | tee /sys/devices/system/cpu/intel_pstate/no_turbo > /dev/null
     echo "${ORIG_GOV}"  | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor > /dev/null
     echo "${ORIG_EPP}"  | tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference > /dev/null
-    echo "==> Restored: governor=${ORIG_GOV}, no_turbo=${ORIG_NO_TURBO}, min=${ORIG_MIN}, max=${ORIG_MAX}, epp=${ORIG_EPP}"
+    
+    # Fix ownership and permissions for non-root user
+    if [[ -n "${SUDO_USER:-}" ]]; then
+        chown -R "${SUDO_USER}:${SUDO_USER}" "${RESULTS_DIR}" 2>/dev/null || true
+    fi
+    chmod -R a+rw "${RESULTS_DIR}" 2>/dev/null || true
+    echo "==> Restored original CPU configuration and permissions."
 }
 trap cleanup EXIT INT TERM
 
 # ── Sanity checks ─────────────────────────────────────────────────────────────
 if [[ ! -x "${BINARY}" ]]; then
-    echo "ERROR: Benchmark binary '${BINARY}' not found or not executable."
-    echo "       Compile first with:"
-    echo "         g++ -O3 -march=native -o benchmark benchmark_multicore_spr.cpp -lpthread"
-    exit 1
+    echo "==> Benchmark binary not found. Compiling with g++..."
+    g++ -O3 -march=native -mavx512f -o "${BINARY}" "${SCRIPT_DIR}/benchmark_multicore_spr.cpp" -lpthread
 fi
-
-mkdir -p "${RESULTS_DIR}"
 
 # ── Prepare system for benchmarking ───────────────────────────────────────────
 echo "==> Configuring CPU for sweep..."
-# 1. Disable Turbo so the PCU won't override our target via HWP autonomous mode
 echo 1 | tee /sys/devices/system/cpu/intel_pstate/no_turbo > /dev/null
-# 2. Use 'performance' governor — disables OS-level DVFS
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor > /dev/null
-# 3. Set EPP to 'performance' — hints HWP to stay at our pinned P-state
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference > /dev/null
 
 echo "==> Turbo disabled. Governor: performance. EPP: performance."
 
-# ── Master CSV ────────────────────────────────────────────────────────────────
-echo "${MASTER_HEADER}" > "${MASTER_CSV}"
+# ── Setup separate CSV for every instruction ──────────────────────────────────
+echo "==> Initializing separate CSV for each instruction in: ${RESULTS_DIR}/"
+for KERNEL in "${KERNELS[@]}"; do
+    KERNEL_CSV="${RESULTS_DIR}/frequency_sweep_${KERNEL}.csv"
+    if [[ -f "${KERNEL_CSV}" ]]; then
+        BACKUP_CSV="${RESULTS_DIR}/frequency_sweep_${KERNEL}_backup_$(date +%Y%m%d_%H%M%S).csv"
+        cp "${KERNEL_CSV}" "${BACKUP_CSV}"
+        chmod 666 "${BACKUP_CSV}" 2>/dev/null || true
+        echo "  [${KERNEL}] Existing CSV backed up to: $(basename "${BACKUP_CSV}")"
+    fi
+    echo "${CSV_HEADER}" > "${KERNEL_CSV}"
+    chmod 666 "${KERNEL_CSV}" 2>/dev/null || true
+    echo "  [${KERNEL}] Ready: frequency_sweep_${KERNEL}.csv"
+done
 
 # ── Main sweep loop ───────────────────────────────────────────────────────────
-TOTAL_FREQS=${#FREQS_KHZ[@]}
-IDX=0
+TOTAL_RUNS=$(( ${#FREQS_KHZ[@]} * ${#KERNELS[@]} * ${#OPERANDS[@]} ))
+RUN_COUNT=0
+
+echo ""
+echo "========================================================"
+echo " Starting sweep: ${#FREQS_KHZ[@]} freqs × ${#KERNELS[@]} kernels × ${#OPERANDS[@]} operands = ${TOTAL_RUNS} total runs"
+echo "========================================================"
 
 for FREQ in "${FREQS_KHZ[@]}"; do
-    IDX=$((IDX + 1))
     FREQ_MHZ=$((FREQ / 1000))
 
     echo ""
     echo "========================================================"
-    echo "  [${IDX}/${TOTAL_FREQS}] Setting frequency to ${FREQ_MHZ} MHz"
+    echo " [FREQ] Locking CPU Frequency to ${FREQ_MHZ} MHz (${FREQ} kHz)"
     echo "========================================================"
 
-    # Pin the P-state: min = max = target.
-    # With intel_pstate + performance governor this forces HWP to operate
-    # at exactly this P-state (both frequency and voltage).
     echo "${FREQ}" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_min_freq > /dev/null
     echo "${FREQ}" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq > /dev/null
 
-    echo "  Waiting ${SETTLE_SECONDS}s for frequency and thermal settling..."
+    echo " Waiting ${SETTLE_SECONDS}s for frequency & thermal settling..."
     sleep "${SETTLE_SECONDS}"
 
-    # Informational: sysfs-reported frequency (may lag ~1 s under HWP)
     ACTUAL_FREQ=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)
-    echo "  Requested: ${FREQ} kHz  |  sysfs reports: ${ACTUAL_FREQ} kHz"
+    echo " Target: ${FREQ} kHz  |  sysfs reports: ${ACTUAL_FREQ} kHz"
 
-    for OP in "${OPERANDS[@]}"; do
-        TMP_CSV=$(mktemp /tmp/bench_tmp.XXXXXX.csv)
+    for KERNEL in "${KERNELS[@]}"; do
+        KERNEL_CSV="${RESULTS_DIR}/frequency_sweep_${KERNEL}.csv"
 
-        echo "  --> Running operand=${OP} ..."
-        "${BINARY}" "${OP}" "${FREQ_MHZ}" "${TMP_CSV}"
+        for OP in "${OPERANDS[@]}"; do
+            RUN_COUNT=$((RUN_COUNT + 1))
 
-        # Strip the header from this run and append data rows to master CSV
-        tail -n +2 "${TMP_CSV}" >> "${MASTER_CSV}"
-        rm -f "${TMP_CSV}"
+            # Temporary file located strictly inside CS-399 results directory
+            TMP_CSV="${RESULTS_DIR}/.tmp_bench_${KERNEL}_${OP}_${FREQ_MHZ}.csv"
 
-        echo "  --> Done (rows appended to master CSV)."
-        sleep "${COOL_BETWEEN_OPERANDS}"
+            echo "  --> [Run ${RUN_COUNT}/${TOTAL_RUNS}] Kernel: ${KERNEL} | Operand: ${OP} @ ${FREQ_MHZ} MHz"
+            "${BINARY}" "${OP}" "${FREQ_MHZ}" "${TMP_CSV}" "${KERNEL}"
+
+            # Append trial data rows to this kernel's dedicated CSV
+            if [[ -f "${TMP_CSV}" ]]; then
+                tail -n +2 "${TMP_CSV}" >> "${KERNEL_CSV}"
+                rm -f "${TMP_CSV}"
+            fi
+
+            # Ensure CSV remains writable by normal users after each run
+            chmod 666 "${KERNEL_CSV}" 2>/dev/null || true
+
+            echo "  --> Completed. (Rows appended to frequency_sweep_${KERNEL}.csv)"
+            sleep "${COOL_BETWEEN_RUNS}"
+        done
     done
 done
 
 # ── Summary ───────────────────────────────────────────────────────────────────
 echo ""
 echo "========================================================"
-echo "  Sweep complete!"
-echo "  Master CSV      : ${MASTER_CSV}"
-ROW_COUNT=$(wc -l < "${MASTER_CSV}")
-echo "  Total data rows : $((ROW_COUNT - 1))  (excluding header)"
+echo " Sweep complete! Results saved in separate CSVs:"
+for KERNEL in "${KERNELS[@]}"; do
+    KERNEL_CSV="${RESULTS_DIR}/frequency_sweep_${KERNEL}.csv"
+    ROW_COUNT=$(wc -l < "${KERNEL_CSV}")
+    echo "  - ${KERNEL_CSV} ($((ROW_COUNT - 1)) rows)"
+done
 echo "========================================================"
