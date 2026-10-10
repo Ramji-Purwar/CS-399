@@ -1,0 +1,156 @@
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=212 dest_flips=212.0 total=840.0 w(a,b0,b1,r0,r1)=104,0,208,104,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=212 dest_flips=212.0 total=840.0 w(a,b0,b1,r0,r1)=104,0,208,104,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=212 dest_flips=212.0 total=840.0 w(a,b0,b1,r0,r1)=104,0,208,104,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=108 dest_flips=108.0 total=632.0 w(a,b0,b1,r0,r1)=104,208,0,4,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=108 dest_flips=108.0 total=632.0 w(a,b0,b1,r0,r1)=104,208,0,4,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=108 dest_flips=108.0 total=632.0 w(a,b0,b1,r0,r1)=104,208,0,4,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=144 dest_flips=144.0 total=704.0 w(a,b0,b1,r0,r1)=104,104,104,108,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=144 dest_flips=144.0 total=704.0 w(a,b0,b1,r0,r1)=104,104,104,108,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=144 dest_flips=144.0 total=704.0 w(a,b0,b1,r0,r1)=104,104,104,108,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=0 dest_flips=272.0 total=688.0 w(a,b0,b1,r0,r1)=104,104,104,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=0 dest_flips=272.0 total=688.0 w(a,b0,b1,r0,r1)=104,104,104,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=0 dest_flips=272.0 total=688.0 w(a,b0,b1,r0,r1)=104,104,104,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=152 dest_flips=160.0 total=728.0 w(a,b0,b1,r0,r1)=104,112,96,52,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=152 dest_flips=160.0 total=728.0 w(a,b0,b1,r0,r1)=104,112,96,52,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=152 dest_flips=160.0 total=728.0 w(a,b0,b1,r0,r1)=104,112,96,52,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x1 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=100 dest_flips=316.0 total=832.0 w(a,b0,b1,r0,r1)=104,4,204,104,4
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x1 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=100 dest_flips=316.0 total=832.0 w(a,b0,b1,r0,r1)=104,4,204,104,4
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x1 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=100 dest_flips=316.0 total=832.0 w(a,b0,b1,r0,r1)=104,4,204,104,4
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=204 dest_flips=204.0 total=824.0 w(a,b0,b1,r0,r1)=104,4,204,104,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=204 dest_flips=204.0 total=824.0 w(a,b0,b1,r0,r1)=104,4,204,104,108
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
+appended 5 rows to results/experiment_ifma_lo.csv
+op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=204 dest_flips=204.0 total=824.0 w(a,b0,b1,r0,r1)=104,4,204,104,108
+appended 5 rows to results/experiment_ifma_lo.csv

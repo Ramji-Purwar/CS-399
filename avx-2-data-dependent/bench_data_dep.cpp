@@ -81,7 +81,7 @@ using namespace std;
 // ----------------------------------------------------------------------
 // Config
 // ----------------------------------------------------------------------
-constexpr int      NUM_CORES   = 56;   // 28 physical + 28 HT siblings; all threads active
+constexpr int      NUM_CORES   = 28;
 // Defaults; override at runtime with env vars BENCH_ITERS / BENCH_TRIALS /
 // BENCH_WARMUP (used by run_sweep.sh). Output CSV path: BENCH_OUT.
 uint64_t ITERATIONS  = 3000000000ULL;   // ops per thread per run

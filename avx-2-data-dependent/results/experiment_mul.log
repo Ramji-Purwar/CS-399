@@ -1,0 +1,156 @@
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,240,56,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,240,56,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,240,56,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3faaaaaa c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=64 dest_flips=0.0 total=432.0 w(a,b0,b1,r0,r1)=112,144,152,152,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3faaaaaa c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=64 dest_flips=0.0 total=432.0 w(a,b0,b1,r0,r1)=112,144,152,152,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3faaaaaa c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=64 dest_flips=0.0 total=432.0 w(a,b0,b1,r0,r1)=112,144,152,152,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fd55555 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,152,144,104,72
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fd55555 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,152,144,104,72
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fd55555 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,152,144,104,72
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fb33333 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,152,144,120,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fb33333 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,152,144,120,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fb33333 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,152,144,120,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fcccccc c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=0 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=112,144,152,96,96
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fcccccc c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=0 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=112,144,152,96,96
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fcccccc c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=0 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=112,144,152,96,96
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=88 dest_flips=0.0 total=456.0 w(a,b0,b1,r0,r1)=112,144,152,80,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=88 dest_flips=0.0 total=456.0 w(a,b0,b1,r0,r1)=112,144,152,80,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=88 dest_flips=0.0 total=456.0 w(a,b0,b1,r0,r1)=112,144,152,80,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f8f0f0f c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=96 dest_flips=0.0 total=464.0 w(a,b0,b1,r0,r1)=112,152,144,64,96
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f8f0f0f c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=96 dest_flips=0.0 total=464.0 w(a,b0,b1,r0,r1)=112,152,144,64,96
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f8f0f0f c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=96 dest_flips=0.0 total=464.0 w(a,b0,b1,r0,r1)=112,152,144,64,96
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3ff00ff0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,144,152,72,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3ff00ff0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,144,152,72,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3ff00ff0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=0.0 total=480.0 w(a,b0,b1,r0,r1)=112,144,152,72,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,240,56,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,240,56,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,240,56,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800001 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,64,232,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800001 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,64,232,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800001 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=0.0 total=560.0 w(a,b0,b1,r0,r1)=112,64,232,104,104
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,0,0
+appended 5 rows to results/experiment_mul.csv
+op=mul d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=0.0 total=544.0 w(a,b0,b1,r0,r1)=112,56,240,112,112
+appended 5 rows to results/experiment_mul.csv

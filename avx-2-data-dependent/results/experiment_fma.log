@@ -1,0 +1,156 @@
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=304.0 total=848.0 w(a,b0,b1,r0,r1)=112,240,56,144,64
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=304.0 total=848.0 w(a,b0,b1,r0,r1)=112,240,56,144,64
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=304.0 total=848.0 w(a,b0,b1,r0,r1)=112,240,56,144,64
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3faaaaaa c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=88 dest_flips=424.0 total=880.0 w(a,b0,b1,r0,r1)=112,144,152,72,96
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3faaaaaa c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=88 dest_flips=424.0 total=880.0 w(a,b0,b1,r0,r1)=112,144,152,72,96
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3faaaaaa c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=88 dest_flips=424.0 total=880.0 w(a,b0,b1,r0,r1)=112,144,152,72,96
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fd55555 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=96 dest_flips=320.0 total=784.0 w(a,b0,b1,r0,r1)=112,152,144,200,104
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fd55555 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=96 dest_flips=320.0 total=784.0 w(a,b0,b1,r0,r1)=112,152,144,200,104
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fd55555 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=96 dest_flips=320.0 total=784.0 w(a,b0,b1,r0,r1)=112,152,144,200,104
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fb33333 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=120 dest_flips=328.0 total=816.0 w(a,b0,b1,r0,r1)=112,152,144,96,88
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fb33333 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=120 dest_flips=328.0 total=816.0 w(a,b0,b1,r0,r1)=112,152,144,96,88
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fb33333 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=120 dest_flips=328.0 total=816.0 w(a,b0,b1,r0,r1)=112,152,144,96,88
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fcccccc c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=0 dest_flips=336.0 total=704.0 w(a,b0,b1,r0,r1)=112,144,152,104,104
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fcccccc c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=0 dest_flips=336.0 total=704.0 w(a,b0,b1,r0,r1)=112,144,152,104,104
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fcccccc c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=0 dest_flips=336.0 total=704.0 w(a,b0,b1,r0,r1)=112,144,152,104,104
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=304.0 total=784.0 w(a,b0,b1,r0,r1)=112,144,152,96,112
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=304.0 total=784.0 w(a,b0,b1,r0,r1)=112,144,152,96,112
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=112 dest_flips=304.0 total=784.0 w(a,b0,b1,r0,r1)=112,144,152,96,112
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f8f0f0f c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=152 dest_flips=296.0 total=816.0 w(a,b0,b1,r0,r1)=112,152,144,128,120
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f8f0f0f c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=152 dest_flips=296.0 total=816.0 w(a,b0,b1,r0,r1)=112,152,144,128,120
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f8f0f0f c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=152 dest_flips=296.0 total=816.0 w(a,b0,b1,r0,r1)=112,152,144,128,120
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3ff00ff0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=120 dest_flips=280.0 total=768.0 w(a,b0,b1,r0,r1)=112,144,152,104,112
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3ff00ff0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=120 dest_flips=280.0 total=768.0 w(a,b0,b1,r0,r1)=112,144,152,104,112
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3ff00ff0 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=120 dest_flips=280.0 total=768.0 w(a,b0,b1,r0,r1)=112,144,152,104,112
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=304.0 total=848.0 w(a,b0,b1,r0,r1)=112,240,56,144,64
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=304.0 total=848.0 w(a,b0,b1,r0,r1)=112,240,56,144,64
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3fffffff c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=176 dest_flips=304.0 total=848.0 w(a,b0,b1,r0,r1)=112,240,56,144,64
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800001 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=304.0 total=864.0 w(a,b0,b1,r0,r1)=112,64,232,64,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800001 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=304.0 total=864.0 w(a,b0,b1,r0,r1)=112,64,232,64,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800001 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=192 dest_flips=304.0 total=864.0 w(a,b0,b1,r0,r1)=112,64,232,64,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 5 rows to results/experiment_fma.csv
+op=fma d1=0x40b33333 d2=0x3f800000 c=0xbfaaaaab toggle=1 toggle_a=1 | in_flips=368 res_flips=184 dest_flips=312.0 total=864.0 w(a,b0,b1,r0,r1)=112,56,240,56,144
+appended 5 rows to results/experiment_fma.csv

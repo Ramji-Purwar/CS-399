@@ -1,7 +1,0 @@
-cfg,freq_khz,label,round,actual_mean_khz,actual_min_khz
-a1,0,low,1,2999994,2998791
-a1,0,high,1,3000021,2999725
-a1,0,high,2,2999939,2997421
-a1,0,low,2,3000022,2994545
-a1,0,low,3,2999917,2995683
-a1,0,high,3,2999834,2995977
