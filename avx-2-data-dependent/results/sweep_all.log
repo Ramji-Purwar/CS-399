@@ -1,0 +1,1095 @@
+op=ifma_lo d1=0x7fffffff d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=124,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x1 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,4,204,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,96,112,96,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,208,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=480.0 total=480.0 w(a,b0,b1,r0,r1)=56,240,240,240,240
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,104,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x3ffffff toggle=1 | in_flips=208 res_flips=104 dest_flips=304.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,100,204
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,108,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=124,104,104,120,120
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,144,152,144,152
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=64 dest_flips=0.0 total=248.0 w(a,b0,b1,r0,r1)=16,152,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,0,208,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,96,112,96,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=124,104,104,60,60
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=88,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=124,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3ff0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=64.0 total=64.0 w(a,b0,b1,r0,r1)=8,104,104,32,32
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,144,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=208,208,0,4,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=8,104,104,204,204
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=96 dest_flips=240.0 total=520.0 w(a,b0,b1,r0,r1)=40,144,152,120,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=128,144,144,112,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,0,208,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fffffff toggle=1 | in_flips=184 res_flips=24 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=128,240,56,136,128
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=56,152,152,152,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=16,152,144,24,192
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,112,96,112,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,152,152,112,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,4,204,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=192 dest_flips=200.0 total=600.0 w(a,b0,b1,r0,r1)=208,96,112,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,96,112,0,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=88 dest_flips=88.0 total=384.0 w(a,b0,b1,r0,r1)=124,208,0,88,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=4 dest_flips=412.0 total=624.0 w(a,b0,b1,r0,r1)=8,104,104,208,204
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=376.0 total=376.0 w(a,b0,b1,r0,r1)=192,104,104,188,188
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=192,96,96,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=124,96,96,60,60
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3ff0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=88,144,144,136,136
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=64 dest_flips=0.0 total=248.0 w(a,b0,b1,r0,r1)=128,144,152,120,136
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=88,152,152,152,152
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=128,152,144,112,128
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=16,64,64,24,24
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=8,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,96,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x1 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=208,4,204,0,204
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=196 dest_flips=204.0 total=608.0 w(a,b0,b1,r0,r1)=124,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=208,208,0,204,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,152,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=192,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=208,104,104,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=120 dest_flips=128.0 total=456.0 w(a,b0,b1,r0,r1)=192,104,104,20,108
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=112 dest_flips=0.0 total=296.0 w(a,b0,b1,r0,r1)=88,144,152,104,152
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=136 dest_flips=0.0 total=320.0 w(a,b0,b1,r0,r1)=40,144,152,96,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=124,4,4,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=208,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,56,240,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=48 dest_flips=0.0 total=232.0 w(a,b0,b1,r0,r1)=88,56,240,88,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=184 dest_flips=296.0 total=664.0 w(a,b0,b1,r0,r1)=56,152,144,152,144
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=208,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,112,112,4,4
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=168 dest_flips=0.0 total=352.0 w(a,b0,b1,r0,r1)=16,152,144,96,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=96.0 total=96.0 w(a,b0,b1,r0,r1)=40,64,64,48,48
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=192 dest_flips=216.0 total=616.0 w(a,b0,b1,r0,r1)=208,96,112,108,108
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3f800001 toggle=1 | in_flips=184 res_flips=16 dest_flips=256.0 total=456.0 w(a,b0,b1,r0,r1)=128,64,232,128,128
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x1 toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=124,4,204,124,84
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=40,144,144,96,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,240,240,168,168
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,4,204,4,200
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=8,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=124,208,208,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,104,104,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=104 dest_flips=112.0 total=424.0 w(a,b0,b1,r0,r1)=208,104,104,4,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,208,0,204,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,144,152,144,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=416.0 total=416.0 w(a,b0,b1,r0,r1)=8,104,104,208,208
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=208,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=184 dest_flips=296.0 total=664.0 w(a,b0,b1,r0,r1)=56,240,56,240,56
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=120 dest_flips=232.0 total=536.0 w(a,b0,b1,r0,r1)=128,144,152,136,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=208,104,104,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=4 dest_flips=412.0 total=624.0 w(a,b0,b1,r0,r1)=8,104,104,204,208
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x0 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,0,208,0,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,96,112,96,108
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=16,152,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,144,144,112,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=208,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=208,96,96,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=376.0 total=376.0 w(a,b0,b1,r0,r1)=192,4,4,188,188
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=60 dest_flips=68.0 total=336.0 w(a,b0,b1,r0,r1)=8,96,112,32,36
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=136 dest_flips=0.0 total=320.0 w(a,b0,b1,r0,r1)=40,144,152,112,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=192,112,112,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=200 dest_flips=216.0 total=624.0 w(a,b0,b1,r0,r1)=192,112,96,112,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=8,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,112,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=128,144,144,128,128
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,208,208,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3f800001 toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,64,232,64,232
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=184 dest_flips=216.0 total=584.0 w(a,b0,b1,r0,r1)=16,144,152,192,24
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=200 dest_flips=216.0 total=624.0 w(a,b0,b1,r0,r1)=192,96,112,104,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,208,0,4,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,56,56,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=124,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=124,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=136 dest_flips=0.0 total=320.0 w(a,b0,b1,r0,r1)=128,144,152,112,152
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,152,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=124,96,96,60,60
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=120 dest_flips=288.0 total=616.0 w(a,b0,b1,r0,r1)=192,104,104,100,188
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3f800001 toggle=1 | in_flips=184 res_flips=176 dest_flips=208.0 total=568.0 w(a,b0,b1,r0,r1)=16,64,232,24,184
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=8,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=104 dest_flips=304.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,204,100
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,152,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=16,152,152,24,24
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,100,108
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,144,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,208,208,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,108,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,152,152,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=208,104,104,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=192,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=196 dest_flips=204.0 total=608.0 w(a,b0,b1,r0,r1)=192,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=88,144,144,96,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,144,144,192,192
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=16,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=128,240,240,136,136
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,152,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=160 dest_flips=0.0 total=344.0 w(a,b0,b1,r0,r1)=40,240,56,168,40
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=128,152,152,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=208,104,104,4,4
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,152,152,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,96,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=208,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=96 dest_flips=240.0 total=520.0 w(a,b0,b1,r0,r1)=128,144,152,128,112
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=184 dest_flips=296.0 total=664.0 w(a,b0,b1,r0,r1)=56,152,144,152,144
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=120 dest_flips=0.0 total=304.0 w(a,b0,b1,r0,r1)=128,144,152,136,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=192,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=192 dest_flips=0.0 total=376.0 w(a,b0,b1,r0,r1)=16,240,56,192,16
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,64,64,48,48
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,104,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,144,144,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=240.0 total=448.0 w(a,b0,b1,r0,r1)=124,4,204,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=120 dest_flips=120.0 total=448.0 w(a,b0,b1,r0,r1)=124,104,104,60,60
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,56,56,128,128
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=8,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=136 dest_flips=264.0 total=584.0 w(a,b0,b1,r0,r1)=128,144,152,112,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x1 toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=8,4,204,8,200
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,240,56,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=192 dest_flips=200.0 total=600.0 w(a,b0,b1,r0,r1)=208,96,112,100,100
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,96,112,96,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x0 toggle=1 | in_flips=208 res_flips=20 dest_flips=20.0 total=248.0 w(a,b0,b1,r0,r1)=192,0,208,0,20
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=124,104,104,60,60
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=108 dest_flips=132.0 total=448.0 w(a,b0,b1,r0,r1)=124,96,112,60,72
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=4,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,96,112,96,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=4,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=60 dest_flips=68.0 total=336.0 w(a,b0,b1,r0,r1)=8,104,104,36,32
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=128,152,152,136,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=192,96,96,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,64,64,128,128
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=60 dest_flips=68.0 total=336.0 w(a,b0,b1,r0,r1)=8,104,104,32,36
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=192,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=192,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=192,96,96,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,144,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=8,208,208,204,204
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=128,152,152,112,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,104,104,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3f800001 toggle=1 | in_flips=184 res_flips=144 dest_flips=208.0 total=536.0 w(a,b0,b1,r0,r1)=40,64,232,48,160
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=8,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=208,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=124,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=16,144,144,192,192
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=64 dest_flips=256.0 total=504.0 w(a,b0,b1,r0,r1)=128,152,144,136,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=192 dest_flips=208.0 total=584.0 w(a,b0,b1,r0,r1)=16,240,56,192,16
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=416.0 total=416.0 w(a,b0,b1,r0,r1)=4,208,208,208,208
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=40,144,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=112 dest_flips=256.0 total=552.0 w(a,b0,b1,r0,r1)=88,144,152,104,152
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=184 dest_flips=296.0 total=664.0 w(a,b0,b1,r0,r1)=56,56,240,56,240
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,144,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=40,152,152,120,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=16,152,152,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=100 dest_flips=140.0 total=448.0 w(a,b0,b1,r0,r1)=124,104,104,120,20
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=64 dest_flips=208.0 total=456.0 w(a,b0,b1,r0,r1)=16,152,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=8,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3f800000 toggle=1 | in_flips=184 res_flips=24 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=128,56,240,128,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=40.0 total=40.0 w(a,b0,b1,r0,r1)=192,104,104,20,20
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,104,104,0,4
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=116 dest_flips=124.0 total=448.0 w(a,b0,b1,r0,r1)=124,104,104,60,64
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=96 dest_flips=240.0 total=520.0 w(a,b0,b1,r0,r1)=40,152,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,144,152,144,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x0 toggle=1 | in_flips=208 res_flips=88 dest_flips=88.0 total=384.0 w(a,b0,b1,r0,r1)=124,0,208,0,88
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=8,208,208,204,204
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=88 dest_flips=88.0 total=384.0 w(a,b0,b1,r0,r1)=124,4,204,4,84
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=192,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,152,144,152,144
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=192,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=184 dest_flips=296.0 total=664.0 w(a,b0,b1,r0,r1)=56,144,152,144,152
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x0 toggle=1 | in_flips=184 res_flips=176 dest_flips=176.0 total=536.0 w(a,b0,b1,r0,r1)=16,0,184,0,176
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,240,240,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,152,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=124,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,4,204,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,152,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=136 dest_flips=248.0 total=568.0 w(a,b0,b1,r0,r1)=40,144,152,112,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=120 dest_flips=288.0 total=616.0 w(a,b0,b1,r0,r1)=192,104,104,188,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=88,152,144,112,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x1 toggle=1 | in_flips=208 res_flips=120 dest_flips=120.0 total=448.0 w(a,b0,b1,r0,r1)=124,4,204,0,120
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=104 dest_flips=248.0 total=536.0 w(a,b0,b1,r0,r1)=88,152,144,112,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=124,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=96 dest_flips=208.0 total=488.0 w(a,b0,b1,r0,r1)=88,152,144,112,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3ff0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,144,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3f800001 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,64,232,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=8,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,64,64,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=192,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,112,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=88,144,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=64 dest_flips=208.0 total=456.0 w(a,b0,b1,r0,r1)=16,144,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=248.0 total=248.0 w(a,b0,b1,r0,r1)=124,4,4,124,124
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=196 dest_flips=204.0 total=608.0 w(a,b0,b1,r0,r1)=124,104,104,104,100
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=88,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=116 dest_flips=124.0 total=448.0 w(a,b0,b1,r0,r1)=124,104,104,64,60
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=88,152,152,112,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,4,204,4,200
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=112 dest_flips=256.0 total=552.0 w(a,b0,b1,r0,r1)=88,152,144,152,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=124,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=188 dest_flips=212.0 total=608.0 w(a,b0,b1,r0,r1)=192,96,112,104,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x0 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,0,208,0,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=124,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=168 dest_flips=200.0 total=552.0 w(a,b0,b1,r0,r1)=16,144,152,104,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=40.0 total=40.0 w(a,b0,b1,r0,r1)=124,104,104,20,20
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,56,240,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,152,144,152,144
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=208,208,208,204,204
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=16,240,240,192,192
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=128,56,56,128,128
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,208,0,204,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=8,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=184 dest_flips=216.0 total=584.0 w(a,b0,b1,r0,r1)=16,152,144,24,192
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=96 dest_flips=208.0 total=488.0 w(a,b0,b1,r0,r1)=88,144,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,144,152,144,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=124,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3f800001 toggle=1 | in_flips=184 res_flips=176 dest_flips=0.0 total=360.0 w(a,b0,b1,r0,r1)=16,64,232,24,184
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=112 dest_flips=208.0 total=504.0 w(a,b0,b1,r0,r1)=16,144,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x3ffffff toggle=1 | in_flips=208 res_flips=104 dest_flips=112.0 total=424.0 w(a,b0,b1,r0,r1)=208,104,104,108,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,96,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x3ffffff toggle=1 | in_flips=208 res_flips=100 dest_flips=140.0 total=448.0 w(a,b0,b1,r0,r1)=124,104,104,20,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=40,144,144,112,112
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,56,240,56,240
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=124,112,112,72,72
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,112,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=40,152,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x0 toggle=1 | in_flips=184 res_flips=160 dest_flips=0.0 total=344.0 w(a,b0,b1,r0,r1)=40,0,184,0,160
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,144,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=8,104,104,36,36
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,144,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=104 dest_flips=0.0 total=288.0 w(a,b0,b1,r0,r1)=88,152,144,112,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=8,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=188 dest_flips=212.0 total=608.0 w(a,b0,b1,r0,r1)=192,112,96,108,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,0,208,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,240,56,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=192 dest_flips=0.0 total=376.0 w(a,b0,b1,r0,r1)=16,56,240,16,192
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,208,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,208,208,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=196 dest_flips=204.0 total=608.0 w(a,b0,b1,r0,r1)=192,104,104,104,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,144,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=160 dest_flips=0.0 total=344.0 w(a,b0,b1,r0,r1)=40,56,240,40,168
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=144 dest_flips=240.0 total=568.0 w(a,b0,b1,r0,r1)=40,152,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=40,152,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,104,100
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=56,152,152,152,152
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=208,112,112,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=204 dest_flips=212.0 total=624.0 w(a,b0,b1,r0,r1)=208,104,104,104,108
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=88,64,64,96,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,152,152,152,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,208,0,208,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=192,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=204 dest_flips=212.0 total=624.0 w(a,b0,b1,r0,r1)=208,104,104,108,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=208,4,4,204,204
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,240,240,136,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x1 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,4,204,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,96,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x0 toggle=1 | in_flips=184 res_flips=160 dest_flips=160.0 total=504.0 w(a,b0,b1,r0,r1)=40,0,184,0,160
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=160 dest_flips=208.0 total=552.0 w(a,b0,b1,r0,r1)=40,240,56,168,40
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=8,112,112,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=192,4,4,192,192
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,144,144,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,4,204,4,204
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=88,240,240,120,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=168 dest_flips=200.0 total=552.0 w(a,b0,b1,r0,r1)=16,152,144,96,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=16,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=192 dest_flips=216.0 total=616.0 w(a,b0,b1,r0,r1)=208,96,112,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,208,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x0 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,0,184,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=112 dest_flips=0.0 total=296.0 w(a,b0,b1,r0,r1)=88,152,144,152,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,240,240,240,240
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,96,112,96,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x0 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=208,0,208,0,204
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=64.0 total=64.0 w(a,b0,b1,r0,r1)=8,104,104,32,32
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3ff0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=56,144,144,144,144
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,104,104,0,4
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=168 dest_flips=0.0 total=352.0 w(a,b0,b1,r0,r1)=16,144,152,104,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=48 dest_flips=0.0 total=232.0 w(a,b0,b1,r0,r1)=88,240,56,120,88
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,112,96,108,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=136 dest_flips=0.0 total=320.0 w(a,b0,b1,r0,r1)=40,152,144,104,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,104,104,4,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=40.0 total=40.0 w(a,b0,b1,r0,r1)=192,208,208,20,20
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3ff0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,144,144,136,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=8,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=208,208,208,4,4
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=56,152,152,152,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=208,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=128.0 total=128.0 w(a,b0,b1,r0,r1)=124,104,104,64,64
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=128,144,152,128,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,152,152,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=8.0 total=216.0 w(a,b0,b1,r0,r1)=8,4,204,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,208,208,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x1 toggle=1 | in_flips=208 res_flips=200 dest_flips=200.0 total=608.0 w(a,b0,b1,r0,r1)=192,4,204,0,200
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3f800000 toggle=1 | in_flips=184 res_flips=48 dest_flips=208.0 total=440.0 w(a,b0,b1,r0,r1)=88,56,240,88,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=208,112,112,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=208,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,96,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=124,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0x3ffffff toggle=1 | in_flips=208 res_flips=100 dest_flips=108.0 total=416.0 w(a,b0,b1,r0,r1)=124,104,104,104,4
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=80.0 total=80.0 w(a,b0,b1,r0,r1)=40,56,56,40,40
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x0 toggle=1 | in_flips=184 res_flips=184 dest_flips=184.0 total=552.0 w(a,b0,b1,r0,r1)=56,0,184,0,184
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=20 dest_flips=20.0 total=248.0 w(a,b0,b1,r0,r1)=192,208,0,20,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=8,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,144,144,144,144
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3ff0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=4 dest_flips=404.0 total=616.0 w(a,b0,b1,r0,r1)=208,4,204,204,200
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x1 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,4,204,4,204
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=124,104,104,60,60
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,56,56,88,88
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=124,112,112,100,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x3ffffff toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=192,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=92 dest_flips=148.0 total=448.0 w(a,b0,b1,r0,r1)=124,96,112,60,88
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=144 dest_flips=0.0 total=328.0 w(a,b0,b1,r0,r1)=40,144,152,120,120
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,152,152,96,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,152,152,112,112
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=112.0 total=112.0 w(a,b0,b1,r0,r1)=56,56,56,56,56
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x0 toggle=1 | in_flips=184 res_flips=112 dest_flips=112.0 total=408.0 w(a,b0,b1,r0,r1)=128,0,184,0,112
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,56,56,40,40
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3ff00ff0 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,144,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=108 dest_flips=132.0 total=448.0 w(a,b0,b1,r0,r1)=124,112,96,72,60
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=208,96,96,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=120 dest_flips=120.0 total=448.0 w(a,b0,b1,r0,r1)=124,104,104,60,60
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=124,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=192,104,104,108,108
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,64,64,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3f800001 toggle=0 | in_flips=0 res_flips=0 dest_flips=128.0 total=128.0 w(a,b0,b1,r0,r1)=56,64,64,64,64
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=172 dest_flips=212.0 total=592.0 w(a,b0,b1,r0,r1)=124,96,112,96,116
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,144,152,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=208,104,104,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=8,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=4,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=188 dest_flips=196.0 total=592.0 w(a,b0,b1,r0,r1)=124,96,112,96,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x8000000000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=208,4,4,4,4
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=128,144,144,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,96,112,0,4
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,152,152,24,24
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=88,152,152,112,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0x3333333333333 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,104,104,0,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xff00ff00ff0 toggle=1 | in_flips=208 res_flips=172 dest_flips=228.0 total=608.0 w(a,b0,b1,r0,r1)=192,96,112,108,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3fffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=40,240,240,168,168
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x7fffffff d2=0x0 toggle=1 | in_flips=208 res_flips=120 dest_flips=120.0 total=448.0 w(a,b0,b1,r0,r1)=124,0,208,0,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=124,104,104,4,4
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=96 dest_flips=240.0 total=520.0 w(a,b0,b1,r0,r1)=128,152,144,112,128
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=40,152,152,120,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,104,104,4,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=192 dest_flips=216.0 total=616.0 w(a,b0,b1,r0,r1)=208,112,96,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=8,104,104,4,4
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,144,144,128,128
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x0 toggle=1 | in_flips=208 res_flips=208 dest_flips=208.0 total=624.0 w(a,b0,b1,r0,r1)=4,0,208,0,208
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=124,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3fd55555 toggle=1 | in_flips=184 res_flips=136 dest_flips=200.0 total=520.0 w(a,b0,b1,r0,r1)=40,152,144,104,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xf0f0f0f0f0f0 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,96,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=188 dest_flips=196.0 total=592.0 w(a,b0,b1,r0,r1)=124,112,96,100,96
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=184 dest_flips=296.0 total=664.0 w(a,b0,b1,r0,r1)=56,144,152,144,152
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x42c20000 d2=0x3faaaaaa toggle=1 | in_flips=184 res_flips=136 dest_flips=200.0 total=520.0 w(a,b0,b1,r0,r1)=40,144,152,96,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=16 dest_flips=384.0 total=608.0 w(a,b0,b1,r0,r1)=192,4,204,188,196
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x7fffffff d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=124,208,208,88,88
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=208,96,96,108,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=0,4,204,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xccccccccccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=8,104,104,36,36
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x0 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,0,208,0,204
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xff00ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=208,96,96,100,100
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3f800001 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,64,232,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,56,56,56,56
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,104,104,104,100
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3f800000 toggle=1 | in_flips=184 res_flips=24 dest_flips=264.0 total=472.0 w(a,b0,b1,r0,r1)=128,56,240,128,136
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xfffffffffffff toggle=1 | in_flips=208 res_flips=188 dest_flips=188.0 total=584.0 w(a,b0,b1,r0,r1)=192,208,0,188,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x10001 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=8,4,4,8,8
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x0 toggle=1 | in_flips=208 res_flips=188 dest_flips=188.0 total=584.0 w(a,b0,b1,r0,r1)=192,0,208,0,188
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x7149f2ca d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=120 dest_flips=232.0 total=536.0 w(a,b0,b1,r0,r1)=128,152,144,96,136
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3f800001 toggle=1 | in_flips=184 res_flips=16 dest_flips=0.0 total=200.0 w(a,b0,b1,r0,r1)=128,64,232,128,128
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3f8f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,152,152,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=8,112,112,36,36
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffff d2=0xaaaaaaaaaaaaa toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,104,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=8,96,96,96,96
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x0 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=208,0,208,0,4
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xffffffc000000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x5555555555555 toggle=1 | in_flips=208 res_flips=60 dest_flips=68.0 total=336.0 w(a,b0,b1,r0,r1)=8,104,104,32,36
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fd55555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,152,152,152,152
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=196 dest_flips=204.0 total=608.0 w(a,b0,b1,r0,r1)=192,104,104,100,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,56,56,16,16
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0xf0f0f0f0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,96,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x0 d2=0x3f8f0f0f toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,152,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=4,112,112,112,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xccccccccccccc toggle=1 | in_flips=208 res_flips=200 dest_flips=208.0 total=616.0 w(a,b0,b1,r0,r1)=208,104,104,100,108
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xfffffffffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=376.0 total=376.0 w(a,b0,b1,r0,r1)=192,208,208,188,188
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x3ff0f0f0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x0 toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=88,0,184,0,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=0 dest_flips=0.0 total=208.0 w(a,b0,b1,r0,r1)=4,112,96,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=88,144,144,104,104
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x1 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,112,112,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x1 d2=0x3ffffff toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=88,56,56,88,88
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x0 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,0,0,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x1 toggle=1 | in_flips=208 res_flips=196 dest_flips=212.0 total=616.0 w(a,b0,b1,r0,r1)=192,4,204,192,20
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,56,56,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,152,152,152,152
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=48 dest_flips=208.0 total=440.0 w(a,b0,b1,r0,r1)=88,240,56,120,88
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3f800001 toggle=1 | in_flips=184 res_flips=144 dest_flips=0.0 total=328.0 w(a,b0,b1,r0,r1)=40,64,232,48,160
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fb33333 toggle=1 | in_flips=184 res_flips=64 dest_flips=0.0 total=248.0 w(a,b0,b1,r0,r1)=128,152,144,136,120
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x1 toggle=1 | in_flips=208 res_flips=204 dest_flips=212.0 total=624.0 w(a,b0,b1,r0,r1)=208,4,204,208,4
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3fcccccc toggle=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=56,144,144,144,144
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,4,4,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x3 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,104,104,4,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x0 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0x1 toggle=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=8,4,4,8,8
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x3fb33333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=128,152,152,136,136
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x0 toggle=1 | in_flips=184 res_flips=0 dest_flips=0.0 total=184.0 w(a,b0,b1,r0,r1)=0,0,184,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x42c20000 d2=0x3ff0f0f0 toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=40,144,152,120,120
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=96 dest_flips=208.0 total=488.0 w(a,b0,b1,r0,r1)=88,144,152,96,112
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x49742430 d2=0x0 toggle=1 | in_flips=184 res_flips=96 dest_flips=96.0 total=376.0 w(a,b0,b1,r0,r1)=88,0,184,0,96
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x40400000 d2=0x0 toggle=1 | in_flips=184 res_flips=176 dest_flips=0.0 total=360.0 w(a,b0,b1,r0,r1)=16,0,184,0,176
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x0 d2=0x3333333333333 toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,0,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=56,144,144,144,144
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0x8000000000000 toggle=1 | in_flips=208 res_flips=4 dest_flips=12.0 total=224.0 w(a,b0,b1,r0,r1)=208,4,204,4,8
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0x3 d2=0xf0f0f0f0f0f0f toggle=1 | in_flips=208 res_flips=204 dest_flips=204.0 total=616.0 w(a,b0,b1,r0,r1)=8,112,96,108,96
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=192,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffff d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=208,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x3f800000 d2=0x3fffffff toggle=1 | in_flips=184 res_flips=184 dest_flips=0.0 total=368.0 w(a,b0,b1,r0,r1)=56,240,56,240,56
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0x5555555555555 toggle=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=192,104,104,104,104
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x3f800000 d2=0x3ff00ff0 toggle=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=56,144,144,144,144
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x0 d2=0x3faaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,0,0
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x49742430 d2=0x3fcccccc toggle=1 | in_flips=184 res_flips=96 dest_flips=0.0 total=280.0 w(a,b0,b1,r0,r1)=88,144,152,96,112
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0x10001 d2=0xffffffc000000 toggle=1 | in_flips=208 res_flips=4 dest_flips=4.0 total=216.0 w(a,b0,b1,r0,r1)=8,104,104,4,0
+appended 20 rows to results/sweep_all.csv
+op=fma d1=0x40400000 d2=0x3f800000 toggle=0 | in_flips=0 res_flips=0 dest_flips=32.0 total=32.0 w(a,b0,b1,r0,r1)=16,56,56,16,16
+appended 20 rows to results/sweep_all.csv
+op=ifma_hi d1=0xfffffffffffd1 d2=0xaaaaaaaaaaaaa toggle=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=192,104,104,100,100
+appended 20 rows to results/sweep_all.csv
+op=ifma_lo d1=0xfffffffffffd1 d2=0xf0f0f0f0f0f0f toggle=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=192,112,112,112,112
+appended 20 rows to results/sweep_all.csv
+op=mul d1=0x7149f2ca d2=0x0 toggle=1 | in_flips=184 res_flips=112 dest_flips=0.0 total=296.0 w(a,b0,b1,r0,r1)=128,0,184,0,112
