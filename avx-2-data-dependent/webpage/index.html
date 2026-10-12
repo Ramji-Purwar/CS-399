@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVX2 Operand Value Power Distribution</title>
+  <script src="chart.min.js"></script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --border: #cccccc;
+      --dim: #888888;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, sans-serif;
+      font-size: 13px;
+      padding: 20px 24px 40px;
+    }
+
+    h1 {
+      font-size: 15px;
+      font-family: monospace;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+      color: var(--fg);
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-end;
+      margin-bottom: 14px;
+    }
+    .ctrl { display: flex; flex-direction: column; gap: 4px; }
+    .ctrl label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--dim);
+      font-family: monospace;
+    }
+    select {
+      appearance: none;
+      border: 1px solid var(--border);
+      padding: 5px 26px 5px 8px;
+      font-size: 12.5px;
+      font-family: monospace;
+      background: var(--bg);
+      color: var(--fg);
+      cursor: pointer;
+      min-width: 200px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5'%3E%3Cpath d='M0 0l5 5 5-5z' fill='%23888'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+    }
+    select:focus { outline: 1px solid var(--fg); }
+
+    .section-label {
+      font-family: monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--dim);
+      margin-bottom: 5px;
+    }
+
+    .toggle-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 14px;
+    }
+    .pat-btn {
+      font-family: monospace;
+      font-size: 11px;
+      padding: 2px 9px;
+      border: 1px solid currentColor;
+      background: transparent;
+      cursor: pointer;
+      transition: opacity 0.12s;
+    }
+    .pat-btn.off { opacity: 0.2; }
+
+    /* 2×2 grid */
+    .plots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+    @media (max-width: 820px) { .plots { grid-template-columns: 1fr; } }
+
+    .plot-panel {
+      border: 1px solid var(--border);
+      padding: 14px 14px 10px;
+    }
+    .plot-title {
+      font-family: monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--dim);
+      margin-bottom: 10px;
+    }
+    .chart-wrap { position: relative; height: 300px; }
+
+    #msg {
+      padding: 40px;
+      text-align: center;
+      font-family: monospace;
+      color: var(--dim);
+    }
+  </style>
+</head>
+<body>
+
+<h1>AVX2 Data-Dependent Power: (D1, D2) Operand Sweep</h1>
+
+<div class="controls">
+  <div class="ctrl">
+    <label>Instruction</label>
+    <select id="sel-op">
+      <option value="fma">vfmadd231ps  (fma)</option>
+      <option value="mul">vmulps  (mul)</option>
+      <option value="ifma_lo">vpmadd52luq  (ifma_lo)</option>
+      <option value="ifma_hi">vpmadd52huq  (ifma_hi)</option>
+    </select>
+  </div>
+  <div class="ctrl">
+    <label>D1 (multiplicand A)</label>
+    <select id="sel-d1">
+      <!-- populated dynamically -->
+    </select>
+  </div>
+</div>
+
+<div class="section-label">D2 patterns (each line = one D2 bit pattern)</div>
+<div class="toggle-row" id="toggle-row"></div>
+
+<div id="msg">Loading...</div>
+
+<!--
+  Layout:
+    [power  185 W]  [power  165 W]
+    [time   185 W]  [time   165 W]
+-->
+<div class="plots" id="plots" style="display:none">
+  <div class="plot-panel">
+    <div class="plot-title">data-dependent power — 185 W (baseline)</div>
+    <div class="chart-wrap"><canvas id="c-pwr-base"></canvas></div>
+  </div>
+  <div class="plot-panel">
+    <div class="plot-title">data-dependent power — 165 W (experiment)</div>
+    <div class="chart-wrap"><canvas id="c-pwr-exp"></canvas></div>
+  </div>
+  <div class="plot-panel">
+    <div class="plot-title">data-dependent time — 185 W (baseline)</div>
+    <div class="chart-wrap"><canvas id="c-time-base"></canvas></div>
+  </div>
+  <div class="plot-panel">
+    <div class="plot-title">data-dependent time — 165 W (experiment)</div>
+    <div class="chart-wrap"><canvas id="c-time-exp"></canvas></div>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+const D1_VALUES = [
+  'zero','one','prime2','prime3','prime5','prime7',
+  'prime97','prime1009','large1','large2','rand1','rand2'
+];
+
+const D2_FLOAT = [
+  'zero','one','alt10','alt01','pair0011','pair1100',
+  'nib0F','nibF0','byte00FF','allbits','lsb','large','neg_one'
+];
+const D2_INT = [
+  'zero','ones','alt10','alt01','pair0011','pair1100',
+  'nib0F','nibF0','byte00FF','low26','high26','lsb','msb'
+];
+
+const COLORS = [
+  '#1f77b4','#ff7f0e','#2ca02c','#d62728','#9467bd',
+  '#8c564b','#e377c2','#7f7f7f','#bcbd22','#17becf',
+  '#393b79','#e7969c','#cedb9c'
+];
+
+function isIntOp(op) { return op === 'ifma_lo' || op === 'ifma_hi'; }
+function d2Patterns(op) { return isIntOp(op) ? D2_INT : D2_FLOAT; }
+
+/* ---- KDE --------------------------------------------------------- */
+function mean(a) { return a.reduce((s,x)=>s+x,0)/a.length; }
+function stddev(a) {
+  const m = mean(a);
+  return Math.sqrt(a.reduce((s,x)=>s+(x-m)**2,0)/a.length);
+}
+function silverman(a) { return 1.06 * stddev(a) * Math.pow(a.length,-0.2); }
+function linspace(lo,hi,n) { return Array.from({length:n},(_,i)=>lo+(hi-lo)*i/(n-1)); }
+function gaussKDE(data, h, pts) {
+  const n=data.length, k=1/(n*h*Math.sqrt(2*Math.PI));
+  return pts.map(x => k * data.reduce((s,xi)=>s+Math.exp(-0.5*((x-xi)/h)**2),0));
+}
+
+/* ---- CSV parser -------------------------------------------------- */
+function parseCSV(txt) {
+  const lines = txt.trim().split('\n');
+  const hdr = lines[0].split(',').map(s=>s.trim());
+  return lines.slice(1).filter(l=>l.trim()).map(l=>{
+    const v=l.split(','), o={};
+    hdr.forEach((h,i)=>{ o[h]=(v[i]||'').trim(); });
+    return o;
+  });
+}
+
+/* ---- state ------------------------------------------------------- */
+const cache  = {};
+const hidden = new Set();
+let   charts = {};  // keys: pwr_base, pwr_exp, time_base, time_exp
+
+/* ---- load -------------------------------------------------------- */
+async function load(op, phase) {
+  const key = op+'|'+phase;
+  if (cache[key]) return cache[key];
+  const r = await fetch('../results/'+phase+'_'+op+'.csv');
+  if (!r.ok) throw new Error(
+    'Could not load '+r.url+
+    '\n\nServe from avx-2-data-dependent/ with:\n  python3 -m http.server 8080'
+  );
+  cache[key] = parseCSV(await r.text());
+  return cache[key];
+}
+
+/* ---- extract values per D2 pattern for a fixed D1 value ---------- */
+function extract(rows, d1Val, col, op) {
+  const pats = d2Patterns(op);
+  const out  = {};
+  for (const pat of pats) {
+    const key  = d1Val + ':' + pat;
+    const vals = rows
+      .filter(r => r.d1_name === key)
+      .map(r => parseFloat(r[col]))
+      .filter(Number.isFinite);
+    if (vals.length >= 3) out[pat] = vals;
+  }
+  return out;
+}
+
+/* ---- build KDE datasets ----------------------------------------- */
+function kdeDatasets(byPattern, pats) {
+  return pats.map((pat,i) => {
+    const vals = byPattern[pat];
+    if (!vals) return null;
+    const h    = silverman(vals);
+    const xmin = Math.min(...vals) - 3.5*h;
+    const xmax = Math.max(...vals) + 3.5*h;
+    const pts  = linspace(xmin, xmax, 300);
+    const dens = gaussKDE(vals, h, pts);
+    return {
+      label:           pat,
+      data:            pts.map((x,j)=>({x, y:dens[j]})),
+      borderColor:     COLORS[i % COLORS.length],
+      backgroundColor: 'transparent',
+      borderWidth:     1.5,
+      pointRadius:     0,
+      tension:         0.3,
+      hidden:          hidden.has(pat),
+    };
+  }).filter(Boolean);
+}
+
+/* ---- chart options ----------------------------------------------- */
+function chartOpts(xlabel) {
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: false,
+    parsing: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: items => items[0].dataset.label,
+          label: it   => ` ${xlabel}: ${it.parsed.x.toFixed(5)}   density: ${it.parsed.y.toFixed(4)}`,
+        },
+        backgroundColor: '#111',
+        titleColor: '#fff',
+        bodyColor: '#aaa',
+        titleFont: { family:'monospace', size:11 },
+        bodyFont:  { family:'monospace', size:11 },
+        padding: 9,
+      }
+    },
+    scales: {
+      x: {
+        type: 'linear',
+        title: { display:true, text:xlabel, color:'#888', font:{family:'monospace',size:10} },
+        ticks: { color:'#888', font:{family:'monospace',size:10}, maxTicksLimit:7 },
+        grid:  { color:'#eeeeee' },
+      },
+      y: {
+        beginAtZero: true,
+        title: { display:true, text:'density', color:'#888', font:{family:'monospace',size:10} },
+        ticks: { color:'#888', font:{family:'monospace',size:10}, maxTicksLimit:6 },
+        grid:  { color:'#eeeeee' },
+      }
+    }
+  };
+}
+
+function makeChart(id, datasets, xlabel) {
+  return new Chart(
+    document.getElementById(id).getContext('2d'),
+    { type:'line', data:{datasets}, options:chartOpts(xlabel) }
+  );
+}
+
+/* ---- toggle buttons ---------------------------------------------- */
+function buildToggles(pats) {
+  const row = document.getElementById('toggle-row');
+  row.innerHTML = pats.map((p,i)=>`
+    <button class="pat-btn${hidden.has(p)?' off':''}"
+            style="color:${COLORS[i % COLORS.length]}"
+            data-pat="${p}">${p}</button>
+  `).join('');
+  row.querySelectorAll('.pat-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const p = btn.dataset.pat;
+      hidden.has(p) ? hidden.delete(p) : hidden.add(p);
+      btn.classList.toggle('off');
+      Object.values(charts).forEach(ch=>{
+        if (!ch) return;
+        const ds = ch.data.datasets.find(d=>d.label===p);
+        if (ds) { ds.hidden = hidden.has(p); ch.update('none'); }
+      });
+    });
+  });
+}
+
+function populateD1() {
+  const sel = document.getElementById('sel-d1');
+  const cur = sel.value;
+  sel.innerHTML = D1_VALUES.map(v=>`<option value="${v}">${v}</option>`).join('');
+  if (D1_VALUES.includes(cur)) sel.value = cur;
+}
+
+/* ---- refresh ----------------------------------------------------- */
+async function refresh() {
+  const op   = document.getElementById('sel-op').value;
+  const d1   = document.getElementById('sel-d1').value;
+  const pats = d2Patterns(op);
+
+  document.getElementById('msg').textContent    = 'Loading...';
+  document.getElementById('msg').style.display  = '';
+  document.getElementById('plots').style.display = 'none';
+
+  try {
+    const [baseRows, expRows] = await Promise.all([
+      load(op, 'baseline'),
+      load(op, 'experiment'),
+    ]);
+
+    const basePwr  = extract(baseRows, d1, 'pkg_W',       op);
+    const baseTime = extract(baseRows, d1, 'mean_time_s', op);
+    const expPwr   = extract(expRows,  d1, 'pkg_W',       op);
+    const expTime  = extract(expRows,  d1, 'mean_time_s', op);
+
+    if (Object.keys(basePwr).length === 0) {
+      document.getElementById('msg').innerHTML =
+        '<span style="font-family:monospace;color:#c00">No data for D1='+d1+' in baseline CSV.</span>';
+      return;
+    }
+
+    Object.values(charts).forEach(c => c && c.destroy());
+
+    charts.pwr_base  = makeChart('c-pwr-base',  kdeDatasets(basePwr,  pats), 'package power (W)');
+    charts.pwr_exp   = makeChart('c-pwr-exp',   kdeDatasets(expPwr,   pats), 'package power (W)');
+    charts.time_base = makeChart('c-time-base', kdeDatasets(baseTime, pats), 'time (s)');
+    charts.time_exp  = makeChart('c-time-exp',  kdeDatasets(expTime,  pats), 'time (s)');
+
+    buildToggles(pats);
+    document.getElementById('msg').style.display   = 'none';
+    document.getElementById('plots').style.display = '';
+  } catch(e) {
+    document.getElementById('msg').innerHTML =
+      '<span style="color:#c00;font-family:monospace;white-space:pre">' +
+      e.message.replace(/</g,'&lt;') + '</span>';
+  }
+}
+
+/* ---- init -------------------------------------------------------- */
+document.getElementById('sel-op').addEventListener('change', () => {
+  hidden.clear();
+  refresh();
+});
+document.getElementById('sel-d1').addEventListener('change', refresh);
+
+populateD1();
+refresh();
+</script>
+</body>
+</html>

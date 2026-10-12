@@ -85,7 +85,7 @@ constexpr int      NUM_CORES   = 28;
 // Defaults; override at runtime with env vars BENCH_ITERS / BENCH_TRIALS /
 // BENCH_WARMUP (used by run_sweep.sh). Output CSV path: BENCH_OUT.
 uint64_t ITERATIONS  = 3000000000ULL;   // ops per thread per run
-int      TRIALS      = 100;
+int      TRIALS      = 25;
 int      WARMUP_RUNS = 5;
 
 constexpr const char *RAPL_PKG_FILE =

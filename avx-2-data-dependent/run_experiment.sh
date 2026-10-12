@@ -1,56 +1,43 @@
 #!/usr/bin/env bash
 #
-# run_experiment.sh -- demonstrate that CPU clock throttling depends on the
-# BIT PATTERNS in AVX2/FMA/IFMA operands, sweeping all supported instruction
-# types: fma (vfmadd231ps), mul (vmulps), ifma_lo (vpmadd52luq),
-# ifma_hi (vpmadd52huq).
+# run_experiment.sh -- measure how AVX2/FMA/IFMA operand values affect
+# power draw and clock frequency, sweeping all (D1, D2) combinations.
 #
 #   sudo ./run_experiment.sh
 #
-# For each instruction type the script runs a two-phase experiment
-# (following Wang et al., CCS 2022 §3.1):
+# For every (D1, D2) pair the benchmark runs with those fixed operands and
+# records TRIALS measurements of (power, time, clock).
 #
-#   Phase 1 — BASELINE (stock PL1 = 185 W):
-#     LOW and HIGH operands run at the same clock and take the same time.
-#     Proves the difference in Phase 2 is NOT from any software setup.
+# Two phases:
+#   Phase 1 — stock PL1 = 185 W  : no throttling expected for any combo
+#   Phase 2 — PL1 = SET_PL1_W    : high-power (D1,D2) pairs get throttled
 #
-#   Phase 2 — SWEEP (PL1 lowered to SET_PL1_W):
-#     For each D2 pattern, LOW (zeros, toggle=0) is compared against HIGH
-#     (that pattern, toggle=1). Patterns that exceed PL1 get hardware-
-#     throttled; patterns below PL1 do not.
-#
-# Instruction types:
-#   fma      vfmadd231ps  (AVX2/FMA)          -- float32 operands
-#   mul      vmulps       (AVX2)               -- float32 operands
-#   ifma_lo  vpmadd52luq  (AVX512IFMA+AVX512VL)-- uint52 operands
-#   ifma_hi  vpmadd52huq  (AVX512IFMA+AVX512VL)-- uint52 operands
-#   ifma_lo/ifma_hi are skipped if avx512ifma is absent from /proc/cpuinfo.
-#
-# The OS governor is "performance", turbo on, full frequency range open.
-# No frequency is ever pinned — every clock difference is hardware's own doing.
+# Instruction types run:
+#   fma      vfmadd231ps  (AVX2/FMA)           float32
+#   mul      vmulps       (AVX2)                float32
+#   ifma_lo  vpmadd52luq  (AVX512IFMA+AVX512VL) uint52
+#   ifma_hi  vpmadd52huq  (AVX512IFMA+AVX512VL) uint52
+#   ifma_lo/hi skipped if avx512ifma absent from /proc/cpuinfo.
 #
 # Tunables (env vars):
-#   BENCH_C     float addend for fma/mul (raises dest-register flips) [0xbfaaaaab]
-#   TRIALS      measured trials per run                               [5]
-#   WARMUP      warm-up runs per run                                  [1]
-#   ITERS       ops per thread per trial                              [12000000000]
-#   ROUNDS      LOW/HIGH round-trips per D2 pattern                   [3]
-#   COOLDOWN    seconds between runs                                  [10]
-#   MAX_TEMP_C  wait until pkg temp drops below this                  [0 = skip]
-#   SET_PL1_W   PL1 for Phase 2 (between LOW and HIGH)               [165]
-#   D1          fixed float multiplier operand (fma/mul)              [0x40b33333]
-#   THRESH_PCT  timing gap (%) to flag as significant                 [0.5]
-#   FREQ_TOL    clock gap fraction to flag                            [0.005]
-#   OUT_DIR     directory for result CSVs                             [results]
+#   BENCH_C     addend for fma/mul (raises dest-reg flips)  [0xbfaaaaab]
+#   TRIALS      measurements per (D1,D2) run                [100]
+#   WARMUP      warm-up runs                                 [1]
+#   ITERS       ops per thread per trial                     [12000000000]
+#   COOLDOWN    seconds between runs                         [10]
+#   MAX_TEMP_C  wait until pkg temp drops below this         [0 = skip]
+#   SET_PL1_W   PL1 for Phase 2                             [165]
+#   THRESH_PCT  timing gap (%) to flag as significant        [0.5]
+#   FREQ_TOL    clock gap fraction to flag                   [0.005]
+#   OUT_DIR     directory for result CSVs                    [results]
 #
 set -u
 cd "$(dirname "$(readlink -f "$0")")"
 
 BENCH_C=${BENCH_C:-0xbfaaaaab}
-TRIALS=${TRIALS:-5}
+TRIALS=${TRIALS:-25}
 WARMUP=${WARMUP:-1}
 ITERS=${ITERS:-12000000000}
-ROUNDS=${ROUNDS:-3}
 COOLDOWN=${COOLDOWN:-10}
 MAX_TEMP_C=${MAX_TEMP_C:-0}
 SET_PL1_W=${SET_PL1_W:-165}
@@ -58,9 +45,6 @@ THRESH_PCT=${THRESH_PCT:-0.5}
 FREQ_TOL=${FREQ_TOL:-0.005}
 OUT_DIR=${OUT_DIR:-results}
 NUM_CORES=28          # must match bench_data_dep.cpp
-
-D1=${D1:-0x40b33333}              # best float D1 (fma/mul)
-D1_IFMA=0xAAAAAAAAAAAAA           # alternating-bit D1 for ifma_lo/ifma_hi
 
 SRC=bench_data_dep.cpp
 BIN=./bench
@@ -207,45 +191,33 @@ start_sampler() {
 }
 
 # ---------------------------------------------------------------
-# run_combo <d2_name> <d2_high_hex> <out_csv> <freq_csv> <logf>
-#           <op> <d1_hex> <bench_c> <d2_low_hex>
-#   Runs ROUNDS round-trips of LOW vs HIGH for one D2 pattern.
+# run_single <d1_name> <d2_name> <d2_hex> <out_csv> <freq_csv>
+#            <logf> <op> <d1_hex> <bench_c>
+#   Runs TRIALS measurements for one fixed (D1, D2) pair.
 # ---------------------------------------------------------------
-run_combo() {
-  local d2_name="$1" d2_high="$2" out="$3" fcsv="$4" lf="$5"
-  local op="$6" d1="$7" bc="$8" d2_low="$9"
+run_single() {
+  local d1_name="$1" d2_name="$2" d2_hex="$3" out="$4" fcsv="$5" lf="$6"
+  local op="$7" d1_hex="$8" bc="$9"
+  local combo_key="${d1_name}:${d2_name}"
   local TMP
   TMP=$(mktemp)
 
-  local LABELS=(low high)
-  local D2S=("$d2_low" "$d2_high")
-  local TOGS=(0 1)
-
-  log "  ── D2=${d2_name} (${d2_high})"
-  local order r i lbl d2 tog
-  for (( r=1; r<=ROUNDS; r++ )); do
-    if (( r % 2 )); then order=(0 1); else order=(1 0); fi
-    for i in "${order[@]}"; do
-      lbl=${LABELS[$i]}; d2=${D2S[$i]}; tog=${TOGS[$i]}
-      wait_cool
-      log "    r=$r $lbl"
-      start_sampler "$TMP"
-      BENCH_OUT="$out" BENCH_TRIALS="$TRIALS" BENCH_WARMUP="$WARMUP" \
-      BENCH_ITERS="$ITERS" BENCH_ROUND="$r" \
-      BENCH_D1_NAME="$d2_name" BENCH_D2_NAME="$lbl" BENCH_FREQ_KHZ=0 \
-      BENCH_TOGGLE_A=1 BENCH_C="$bc" \
-        "$BIN" "$op" "$d1" "$d2" "$tog" 2>>"$lf" \
-        || log "    FAILED (see $lf)"
-      kill "$SAMPLER_PID" 2>/dev/null; wait "$SAMPLER_PID" 2>/dev/null; SAMPLER_PID=""
-      awk -v c="$d2_name" -v f=0 -v l="$lbl" -v r="$r" '
-        {a[NR]=$1}
-        END{ if(NR==0){exit}
-             s=(NR<4) ? 1 : int(NR/2)+1; n=0; sum=0; mn=a[s]
-             for(i=s;i<=NR;i++){sum+=a[i]; n++; if(a[i]<mn)mn=a[i]}
-             printf "%s,%s,%s,%s,%.0f,%d\n", c,f,l,r,sum/n,mn }' "$TMP" >> "$fcsv"
-      sleep "$COOLDOWN"
-    done
-  done
+  wait_cool
+  start_sampler "$TMP"
+  BENCH_OUT="$out" BENCH_TRIALS="$TRIALS" BENCH_WARMUP="$WARMUP" \
+  BENCH_ITERS="$ITERS" BENCH_ROUND="1" \
+  BENCH_D1_NAME="$combo_key" BENCH_D2_NAME="result" BENCH_FREQ_KHZ=0 \
+  BENCH_TOGGLE_A=0 BENCH_C="$bc" \
+    "$BIN" "$op" "$d1_hex" "$d2_hex" "0" 2>>"$lf" \
+    || log "    FAILED (see $lf)"
+  kill "$SAMPLER_PID" 2>/dev/null; wait "$SAMPLER_PID" 2>/dev/null; SAMPLER_PID=""
+  awk -v c="$combo_key" -v f=0 -v l="result" -v r="1" '
+    {a[NR]=$1}
+    END{ if(NR==0){exit}
+         s=(NR<4) ? 1 : int(NR/2)+1; n=0; sum=0; mn=a[s]
+         for(i=s;i<=NR;i++){sum+=a[i]; n++; if(a[i]<mn)mn=a[i]}
+         printf "%s,%s,%s,%s,%.0f,%d\n", c,f,l,r,sum/n,mn }' "$TMP" >> "$fcsv"
+  sleep "$COOLDOWN"
   rm -f "$TMP"
 }
 
@@ -263,76 +235,112 @@ thr, tol, pl1 = float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5])
 
 T = defaultdict(list); W = defaultdict(list); A = defaultdict(list); cfgs = []
 for r in csv.DictReader(open(bench)):
-    k = (r['d1_name'], r['d2_name'])
+    k = r['d1_name']
     T[k].append(float(r['mean_time_s'])); W[k].append(float(r['pkg_W']))
-    if r['d1_name'] not in cfgs: cfgs.append(r['d1_name'])
+    if k not in cfgs: cfgs.append(k)
 for r in csv.DictReader(open(fcsv)):
-    A[(r['cfg'], r['label'])].append(float(r['actual_mean_khz']))
+    A[r['cfg']].append(float(r['actual_mean_khz']))
 
 print(f"\n{'='*80}")
 print(f"  {phase}   (PL1 = {pl1:.0f} W)")
 print(f"{'='*80}")
-hdr = (f"{'D2 pattern':>12} | {'clk L':>7} {'clk H':>7} {'dclk %':>7} | "
-       f"{'time L (s)':>10} {'time H (s)':>10} {'dt %':>6} | "
-       f"{'W low':>6} {'W high':>6} | result")
+hdr = (f"{'D1:D2 combo':>22} | {'clk MHz':>7} | "
+       f"{'time (s)':>10} | {'power W':>8} | result")
 print(hdr); print("-" * len(hdr))
 
 for cfg in cfgs:
-    kl, kh = (cfg, 'low'), (cfg, 'high')
-    if kl not in T or kh not in T: continue
-    tl, th = st.mean(T[kl]), st.mean(T[kh])
-    wl, wh = st.mean(W[kl]), st.mean(W[kh])
-    diff = (th - tl) / tl * 100
-    sem  = ((st.pstdev(T[kl])**2 + st.pstdev(T[kh])**2)**0.5 / len(T[kl])**0.5) / tl * 100
-    al = st.mean(A[kl]) if A[kl] else float('nan')
-    ah = st.mean(A[kh]) if A[kh] else float('nan')
-    dclk = (ah - al) / al * 100 if al else float('nan')
-    clock_gap = ah < al * (1 - tol)
-    td = diff > thr and diff > 3 * sem
+    if cfg not in T: continue
+    t = st.mean(T[cfg])
+    w = st.mean(W[cfg])
+    al = st.mean(A[cfg]) if A[cfg] else float('nan')
     flags = []
-    if pl1 > 0 and wl > pl1: flags.append("LOW>PL1")
-    if pl1 > 0 and wh > pl1: flags.append("HIGH>PL1")
-    if clock_gap and td: flags.append("THROTTLED ✓")
-    elif clock_gap:      flags.append("clock gap")
-    elif td:             flags.append("timing gap")
-    else:                flags.append("—")
-    print(f"{cfg:>12} | {al/1000:7.0f} {ah/1000:7.0f} {dclk:7.2f} | "
-          f"{tl:10.4f} {th:10.4f} {diff:6.2f} | {wl:6.1f} {wh:6.1f} | {', '.join(flags)}")
+    if pl1 > 0 and w > pl1: flags.append("OVER PL1")
+    else: flags.append("—")
+    print(f"{cfg:>22} | {al/1000:7.0f} | {t:10.4f} | {w:8.1f} | {', '.join(flags)}")
 print()
 PY
 }
 
 # ================================================================
-# 13-pattern D2 sweep  (raw 52-bit mantissa values)
-# fma/mul: OR with 0x3F800000 to get a valid float in [1.0, 2.0)
-# ifma_*:  use raw 52-bit integer values directly
+# D1 values: 0, 1, small primes, large primes, large numbers, random
+# Edit these lists to change what D1 values are tried.
 # ================================================================
-_raw_patterns=(
-  "zero:0x0"
-  "ones:0xFFFFFFFFFFFFF"
-  "alt10:0xAAAAAAAAAAAAA"
+_d1_float_vals=(
+  "zero:0.0"
+  "one:1.0"
+  "prime2:2.0"
+  "prime3:3.0"
+  "prime5:5.0"
+  "prime7:7.0"
+  "prime97:97.0"
+  "prime1009:1009.0"
+  "large1:1000000.0"
+  "large2:1.0e10"
+  "rand1:3.14159265"
+  "rand2:1234567.89"
+)
+_d1_int_vals=(
+  "zero:0"
+  "one:1"
+  "prime2:2"
+  "prime3:3"
+  "prime5:5"
+  "prime7:7"
+  "prime97:97"
+  "prime1009:1009"
+  "large1:1000000"
+  "large2:999999937"
+  "rand1:3141592653"
+  "rand2:2718281828"
+)
+
+# ================================================================
+# D2 patterns: explicit hex values for each op type.
+# float ops: includes 0x00000000 (actual zero) plus mantissa patterns.
+# ifma ops:  includes 0 (integer zero) plus 52-bit patterns.
+# ================================================================
+_d2_float_patterns=(
+  "zero:0x00000000"
+  "one:0x3f800000"
+  "alt10:0x3faaaaaa"
+  "alt01:0x3fd55555"
+  "pair0011:0x3fb33333"
+  "pair1100:0x3fcccccc"
+  "nib0F:0x3ff0f0f0"
+  "nibF0:0x3f8f0f0f"
+  "byte00FF:0x3ff00ff0"
+  "allbits:0x3fffffff"
+  "lsb:0x3f800001"
+  "large:0x4f800000"
+  "neg_one:0xbf800000"
+)
+_d2_int_patterns=(
+  "zero:0x0000000000000"
+  "ones:0xfffffffffffff"
+  "alt10:0xaaaaaaaaaaaaa"
   "alt01:0x5555555555555"
   "pair0011:0x3333333333333"
-  "pair1100:0xCCCCCCCCCCCCC"
-  "nib0F:0x0F0F0F0F0F0F0"
-  "nibF0:0xF0F0F0F0F0F0F"
-  "byte00FF:0x00FF00FF00FF0"
-  "low26:0x0000003FFFFFF"
-  "high26:0xFFFFFFC000000"
+  "pair1100:0xccccccccccccc"
+  "nib0F:0x0f0f0f0f0f0f0"
+  "nibF0:0xf0f0f0f0f0f0f"
+  "byte00FF:0x00ff00ff00ff0"
+  "low26:0x0000003ffffff"
+  "high26:0xffffffc000000"
   "lsb:0x0000000000001"
   "msb:0x8000000000000"
 )
 
-release_freq; sleep 2
-log "frequency NOT pinned: hardware range $(<"$CPU0/cpuinfo_min_freq")..${START_KHZ} kHz"
-
 # ================================================================
 # Main loop: Phase 1 + Phase 2 for each instruction type
 # ================================================================
-# Total run_combo calls = ops × patterns × 2 phases
-COMBO_TOTAL=$(( ${#ALL_OPS[@]} * ${#_raw_patterns[@]} * 2 ))
+_D1_COUNT=${#_d1_float_vals[@]}
+_D2_COUNT=${#_d2_float_patterns[@]}
+COMBO_TOTAL=$(( ${#ALL_OPS[@]} * _D1_COUNT * _D2_COUNT * 2 ))
 COMBO_DONE=0
-log "total combos to run: ${COMBO_TOTAL}  (${#ALL_OPS[@]} ops × ${#_raw_patterns[@]} patterns × 2 phases)"
+
+release_freq; sleep 2
+log "frequency NOT pinned: hardware range $(<"$CPU0/cpuinfo_min_freq")..${START_KHZ} kHz"
+log "total combos to run: ${COMBO_TOTAL}  (${#ALL_OPS[@]} ops × ${_D1_COUNT} D1 × ${_D2_COUNT} D2 × 2 phases)"
 
 for CUR_OP in "${ALL_OPS[@]}"; do
   log ""
@@ -340,34 +348,34 @@ for CUR_OP in "${ALL_OPS[@]}"; do
   log "║  INSTRUCTION TYPE: $CUR_OP"
   log "╚══════════════════════════════════════════════════════════════════╝"
 
-  # Per-op operand parameters and D2 sweep computation
+  # Build D1_SWEEP and D2_SWEEP for this op type
   if [[ "$CUR_OP" == "fma" || "$CUR_OP" == "mul" ]]; then
-    CUR_D1="$D1"
     CUR_BENCH_C="$BENCH_C"
-    CUR_D2_LOW=0x00000000
-    # Float patterns: 0x3F800000 | (raw52 & 0x7FFFFF) → value in [1.0, 2.0)
-    D2_SWEEP=()
-    for _e in "${_raw_patterns[@]}"; do
-      _n="${_e%%:*}"; _r="${_e#*:}"
-      _hex=$(printf "0x%08x" $(( 0x3F800000 | (_r & 0x7FFFFF) )))
-      D2_SWEEP+=("${_n}:${_hex}")
+    # D1: actual float values → convert to IEEE float32 hex
+    D1_SWEEP=()
+    for _e in "${_d1_float_vals[@]}"; do
+      _n="${_e%%:*}"; _v="${_e#*:}"
+      _hex=$(python3 -c "import struct; print(hex(struct.unpack('I', struct.pack('f', $_v))[0]))")
+      D1_SWEEP+=("${_n}:${_hex}")
     done
+    # D2: explicit float hex patterns (includes actual 0x00000000)
+    D2_SWEEP=("${_d2_float_patterns[@]}")
   else
-    # ifma_lo / ifma_hi: raw 52-bit unsigned integer patterns
-    CUR_D1="$D1_IFMA"
+    # ifma_lo / ifma_hi: 52-bit unsigned integer operands
     CUR_BENCH_C=0xAAAAAAAAAAAAA
-    CUR_D2_LOW=0x0000000000000
-    D2_SWEEP=()
-    for _e in "${_raw_patterns[@]}"; do
-      _n="${_e%%:*}"; _r="${_e#*:}"
-      _hex=$(printf "0x%013x" $(( _r & 0xFFFFFFFFFFFFF )))
-      D2_SWEEP+=("${_n}:${_hex}")
+    # D1: actual integer values
+    D1_SWEEP=()
+    for _e in "${_d1_int_vals[@]}"; do
+      _n="${_e%%:*}"; _v="${_e#*:}"
+      _hex=$(printf "0x%013x" $(( _v )))
+      D1_SWEEP+=("${_n}:${_hex}")
     done
+    # D2: explicit 52-bit integer hex patterns (includes actual 0)
+    D2_SWEEP=("${_d2_int_patterns[@]}")
   fi
-  unset _e _n _r _hex
+  unset _e _n _v _hex
 
   # ── Phase 1: BASELINE (stock PL1, no throttling expected) ────────────────
-  # Restore PL1 to stock in case the previous op left it lowered.
   if [[ -n $RAPL_PL1_FILE ]]; then
     echo "$SAVED_PL1_UW" > "$RAPL_PL1_FILE"
   fi
@@ -375,7 +383,7 @@ for CUR_OP in "${ALL_OPS[@]}"; do
 
   log "════════════════════════════════════════════════════════════════"
   log "  PHASE 1: BASELINE  —  stock PL1 = ${STOCK_PL1_W} W  |  op = $CUR_OP"
-  log "  D1 = $CUR_D1  |  LOW: D2=$CUR_D2_LOW toggle=0  vs  HIGH: D2=<pattern> toggle=1"
+  log "  D1: ${#D1_SWEEP[@]} values × D2: ${#D2_SWEEP[@]} patterns = $(( ${#D1_SWEEP[@]} * ${#D2_SWEEP[@]} )) combos"
   log "════════════════════════════════════════════════════════════════"
 
   BASE_CSV="$OUT_DIR/baseline_${CUR_OP}.csv"
@@ -385,12 +393,15 @@ for CUR_OP in "${ALL_OPS[@]}"; do
   echo "op,round,d1_name,d2_name,data1,data2,datac,freq_khz,toggle,trial,mean_time_s,std_time_s,pkg_J,pkg_W,nJ_per_op,a_weight,b0_weight,b1_weight,r0_weight,r1_weight,input_flips_per_op,result_flips_per_op,dest_flips_per_op,total_flips_per_op,toggle_a" > "$BASE_CSV"
   echo "cfg,freq_khz,label,round,actual_mean_khz,actual_min_khz" > "$BASE_FREQ"
 
-  for entry in "${D2_SWEEP[@]}"; do
-    COMBO_DONE=$(( COMBO_DONE + 1 ))
-    d2_name="${entry%%:*}"; d2_high="${entry#*:}"
-    log "[${COMBO_DONE}/${COMBO_TOTAL}] op=${CUR_OP} | phase=1 (baseline) | pattern=${d2_name}"
-    run_combo "$d2_name" "$d2_high" "$BASE_CSV" "$BASE_FREQ" "$BASE_LOG" \
-              "$CUR_OP" "$CUR_D1" "$CUR_BENCH_C" "$CUR_D2_LOW"
+  for d1_entry in "${D1_SWEEP[@]}"; do
+    d1_pat="${d1_entry%%:*}"; d1_hex="${d1_entry#*:}"
+    for d2_entry in "${D2_SWEEP[@]}"; do
+      COMBO_DONE=$(( COMBO_DONE + 1 ))
+      d2_name="${d2_entry%%:*}"; d2_hex="${d2_entry#*:}"
+      log "[${COMBO_DONE}/${COMBO_TOTAL}] op=${CUR_OP} phase=1 | D1=${d1_pat} D2=${d2_name}"
+      run_single "$d1_pat" "$d2_name" "$d2_hex" "$BASE_CSV" "$BASE_FREQ" "$BASE_LOG" \
+                 "$CUR_OP" "$d1_hex" "$CUR_BENCH_C"
+    done
   done
   analyse "PHASE 1: BASELINE (stock PL1=${STOCK_PL1_W} W) | op=$CUR_OP" \
           "$BASE_CSV" "$BASE_FREQ" "$STOCK_PL1_W"
@@ -404,7 +415,7 @@ for CUR_OP in "${ALL_OPS[@]}"; do
   log ""
   log "════════════════════════════════════════════════════════════════"
   log "  PHASE 2: EXPERIMENT  —  PL1 = ${SET_PL1_W} W  |  op = $CUR_OP"
-  log "  D1 = $CUR_D1  |  LOW: D2=$CUR_D2_LOW toggle=0  vs  HIGH: D2=<pattern> toggle=1"
+  log "  D1: ${#D1_SWEEP[@]} values × D2: ${#D2_SWEEP[@]} patterns = $(( ${#D1_SWEEP[@]} * ${#D2_SWEEP[@]} )) combos"
   log "════════════════════════════════════════════════════════════════"
 
   EXP_CSV="$OUT_DIR/experiment_${CUR_OP}.csv"
@@ -414,12 +425,15 @@ for CUR_OP in "${ALL_OPS[@]}"; do
   echo "op,round,d1_name,d2_name,data1,data2,datac,freq_khz,toggle,trial,mean_time_s,std_time_s,pkg_J,pkg_W,nJ_per_op,a_weight,b0_weight,b1_weight,r0_weight,r1_weight,input_flips_per_op,result_flips_per_op,dest_flips_per_op,total_flips_per_op,toggle_a" > "$EXP_CSV"
   echo "cfg,freq_khz,label,round,actual_mean_khz,actual_min_khz" > "$EXP_FREQ"
 
-  for entry in "${D2_SWEEP[@]}"; do
-    COMBO_DONE=$(( COMBO_DONE + 1 ))
-    d2_name="${entry%%:*}"; d2_high="${entry#*:}"
-    log "[${COMBO_DONE}/${COMBO_TOTAL}] op=${CUR_OP} | phase=2 (experiment PL1=${SET_PL1_W}W) | pattern=${d2_name}"
-    run_combo "$d2_name" "$d2_high" "$EXP_CSV" "$EXP_FREQ" "$EXP_LOG" \
-              "$CUR_OP" "$CUR_D1" "$CUR_BENCH_C" "$CUR_D2_LOW"
+  for d1_entry in "${D1_SWEEP[@]}"; do
+    d1_pat="${d1_entry%%:*}"; d1_hex="${d1_entry#*:}"
+    for d2_entry in "${D2_SWEEP[@]}"; do
+      COMBO_DONE=$(( COMBO_DONE + 1 ))
+      d2_name="${d2_entry%%:*}"; d2_hex="${d2_entry#*:}"
+      log "[${COMBO_DONE}/${COMBO_TOTAL}] op=${CUR_OP} phase=2 PL1=${SET_PL1_W}W | D1=${d1_pat} D2=${d2_name}"
+      run_single "$d1_pat" "$d2_name" "$d2_hex" "$EXP_CSV" "$EXP_FREQ" "$EXP_LOG" \
+                 "$CUR_OP" "$d1_hex" "$CUR_BENCH_C"
+    done
   done
   analyse "PHASE 2: EXPERIMENT (PL1=${SET_PL1_W} W) | op=$CUR_OP" \
           "$EXP_CSV" "$EXP_FREQ" "$SET_PL1_W"

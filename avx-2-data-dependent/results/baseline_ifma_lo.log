@@ -1,156 +1,312 @@
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=212 dest_flips=212.0 total=840.0 w(a,b0,b1,r0,r1)=104,0,208,104,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=212 dest_flips=212.0 total=840.0 w(a,b0,b1,r0,r1)=104,0,208,104,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=212 dest_flips=212.0 total=840.0 w(a,b0,b1,r0,r1)=104,0,208,104,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=108 dest_flips=108.0 total=632.0 w(a,b0,b1,r0,r1)=104,208,0,4,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=108 dest_flips=108.0 total=632.0 w(a,b0,b1,r0,r1)=104,208,0,4,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=108 dest_flips=108.0 total=632.0 w(a,b0,b1,r0,r1)=104,208,0,4,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=144 dest_flips=144.0 total=704.0 w(a,b0,b1,r0,r1)=104,104,104,108,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=144 dest_flips=144.0 total=704.0 w(a,b0,b1,r0,r1)=104,104,104,108,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=144 dest_flips=144.0 total=704.0 w(a,b0,b1,r0,r1)=104,104,104,108,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=0 dest_flips=272.0 total=688.0 w(a,b0,b1,r0,r1)=104,104,104,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=0 dest_flips=272.0 total=688.0 w(a,b0,b1,r0,r1)=104,104,104,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=0 dest_flips=272.0 total=688.0 w(a,b0,b1,r0,r1)=104,104,104,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=152 dest_flips=160.0 total=728.0 w(a,b0,b1,r0,r1)=104,112,96,52,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=152 dest_flips=160.0 total=728.0 w(a,b0,b1,r0,r1)=104,112,96,52,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=152 dest_flips=160.0 total=728.0 w(a,b0,b1,r0,r1)=104,112,96,52,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=160 dest_flips=168.0 total=744.0 w(a,b0,b1,r0,r1)=104,96,112,60,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=156 dest_flips=164.0 total=736.0 w(a,b0,b1,r0,r1)=104,104,104,56,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x1 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=100 dest_flips=316.0 total=832.0 w(a,b0,b1,r0,r1)=104,4,204,104,4
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x1 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=100 dest_flips=316.0 total=832.0 w(a,b0,b1,r0,r1)=104,4,204,104,4
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x1 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=100 dest_flips=316.0 total=832.0 w(a,b0,b1,r0,r1)=104,4,204,104,4
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=204 dest_flips=204.0 total=824.0 w(a,b0,b1,r0,r1)=104,4,204,104,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=204 dest_flips=204.0 total=824.0 w(a,b0,b1,r0,r1)=104,4,204,104,108
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=1 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=104,0,0,104,104
-appended 5 rows to results/baseline_ifma_lo.csv
-op=ifma_lo d1=0xaaaaaaaaaaaaa d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=1 toggle_a=1 | in_flips=416 res_flips=204 dest_flips=204.0 total=824.0 w(a,b0,b1,r0,r1)=104,4,204,104,108
-appended 5 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,208,208,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,96,96,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,112,112,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,96,96,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x0 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=4,208,208,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=416.0 total=416.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=4,104,104,208,208
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=312.0 total=312.0 w(a,b0,b1,r0,r1)=4,104,104,156,156
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=312.0 total=312.0 w(a,b0,b1,r0,r1)=4,104,104,156,156
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=4,96,96,128,128
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=168.0 total=168.0 w(a,b0,b1,r0,r1)=4,112,112,132,132
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=4,96,96,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=4,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=4,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=8.0 total=8.0 w(a,b0,b1,r0,r1)=4,4,4,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x1 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=4,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=4,208,208,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=4,104,104,204,204
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=416.0 total=416.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=312.0 total=312.0 w(a,b0,b1,r0,r1)=4,104,104,52,52
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=4,104,104,56,56
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=4,96,96,80,80
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=160.0 total=160.0 w(a,b0,b1,r0,r1)=4,112,112,80,80
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=4,96,96,92,92
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=4,104,104,100,100
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=4,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=4,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x2 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=4,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=32.0 total=32.0 w(a,b0,b1,r0,r1)=8,208,208,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=8,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=8,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=312.0 total=312.0 w(a,b0,b1,r0,r1)=8,104,104,60,60
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=296.0 total=296.0 w(a,b0,b1,r0,r1)=8,104,104,60,60
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=8,96,96,152,152
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=8,112,112,160,160
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=8,96,96,128,128
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=8,104,104,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=32.0 total=32.0 w(a,b0,b1,r0,r1)=8,104,104,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=8,4,4,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=8,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=40.0 total=40.0 w(a,b0,b1,r0,r1)=8,208,208,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=8,104,104,200,200
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=8,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=8,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=8,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=8,96,96,152,152
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=328.0 total=328.0 w(a,b0,b1,r0,r1)=8,112,112,156,156
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=8,96,96,128,128
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=8,104,104,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=40.0 total=40.0 w(a,b0,b1,r0,r1)=8,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=8,4,4,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x5 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=8,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=12,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=12,208,208,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=12,104,104,100,100
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=12,104,104,204,204
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=12,104,104,64,64
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=296.0 total=296.0 w(a,b0,b1,r0,r1)=12,104,104,68,68
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=12,96,96,64,64
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=312.0 total=312.0 w(a,b0,b1,r0,r1)=12,112,112,60,60
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=12,96,96,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=12,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=24.0 total=24.0 w(a,b0,b1,r0,r1)=12,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=32.0 total=32.0 w(a,b0,b1,r0,r1)=12,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x7 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=12,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=12,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=12,208,208,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=408.0 total=408.0 w(a,b0,b1,r0,r1)=12,104,104,100,100
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=12,104,104,204,204
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=12,104,104,72,72
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=296.0 total=296.0 w(a,b0,b1,r0,r1)=12,104,104,76,76
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=296.0 total=296.0 w(a,b0,b1,r0,r1)=12,96,96,148,148
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=12,112,112,152,152
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=168.0 total=168.0 w(a,b0,b1,r0,r1)=12,96,96,84,84
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=12,104,104,100,100
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=12,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=32.0 total=32.0 w(a,b0,b1,r0,r1)=12,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x61 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=12,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=28,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=28,208,208,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=368.0 total=368.0 w(a,b0,b1,r0,r1)=28,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=184.0 total=184.0 w(a,b0,b1,r0,r1)=28,104,104,196,196
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=28,104,104,152,152
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=264.0 total=264.0 w(a,b0,b1,r0,r1)=28,104,104,148,148
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=28,96,96,64,64
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=28,112,112,64,64
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=28,96,96,140,140
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=28,104,104,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=28,104,104,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=32.0 total=32.0 w(a,b0,b1,r0,r1)=28,4,4,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3f1 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=28,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=28,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=28,208,208,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=296.0 total=296.0 w(a,b0,b1,r0,r1)=28,104,104,100,100
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=160.0 total=160.0 w(a,b0,b1,r0,r1)=28,104,104,176,176
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=88.0 total=88.0 w(a,b0,b1,r0,r1)=28,104,104,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=88.0 total=88.0 w(a,b0,b1,r0,r1)=28,104,104,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=28,96,96,88,88
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=184.0 total=184.0 w(a,b0,b1,r0,r1)=28,112,112,84,84
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=168.0 total=168.0 w(a,b0,b1,r0,r1)=28,96,96,124,124
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=28,104,104,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=72.0 total=72.0 w(a,b0,b1,r0,r1)=28,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=56.0 total=56.0 w(a,b0,b1,r0,r1)=28,4,4,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xf4240 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=28,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=64,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=64,208,208,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=296.0 total=296.0 w(a,b0,b1,r0,r1)=64,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=184.0 total=184.0 w(a,b0,b1,r0,r1)=64,104,104,156,156
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=64,104,104,80,80
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=296.0 total=296.0 w(a,b0,b1,r0,r1)=64,104,104,84,84
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=248.0 total=248.0 w(a,b0,b1,r0,r1)=64,96,96,148,148
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=64,112,112,152,152
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=64,96,96,72,72
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=248.0 total=248.0 w(a,b0,b1,r0,r1)=64,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=88.0 total=88.0 w(a,b0,b1,r0,r1)=64,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=152.0 total=152.0 w(a,b0,b1,r0,r1)=64,4,4,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0x3b9ac9c1 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=64,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=64,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=64,208,208,120,120
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=136.0 total=136.0 w(a,b0,b1,r0,r1)=64,104,104,116,116
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=120.0 total=120.0 w(a,b0,b1,r0,r1)=64,104,104,124,124
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=264.0 total=264.0 w(a,b0,b1,r0,r1)=64,104,104,76,76
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=248.0 total=248.0 w(a,b0,b1,r0,r1)=64,104,104,76,76
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=64,96,96,128,128
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=64,112,112,128,128
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=64,96,96,112,112
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=232.0 total=232.0 w(a,b0,b1,r0,r1)=64,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=136.0 total=136.0 w(a,b0,b1,r0,r1)=64,104,104,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=64,4,4,120,120
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xbb40e64d d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=16.0 total=16.0 w(a,b0,b1,r0,r1)=64,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0x0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=44,0,0,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0xfffffffffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=112.0 total=112.0 w(a,b0,b1,r0,r1)=44,208,208,96,96
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0xaaaaaaaaaaaaa c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=44,104,104,144,144
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0x5555555555555 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=44,104,104,128,128
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0x3333333333333 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=232.0 total=232.0 w(a,b0,b1,r0,r1)=44,104,104,92,92
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0xccccccccccccc c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=216.0 total=216.0 w(a,b0,b1,r0,r1)=44,104,104,92,92
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0xf0f0f0f0f0f0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=44,96,96,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0xf0f0f0f0f0f0f c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=200.0 total=200.0 w(a,b0,b1,r0,r1)=44,112,112,108,108
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0xff00ff00ff0 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=44,96,96,96,96
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0x3ffffff c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=184.0 total=184.0 w(a,b0,b1,r0,r1)=44,104,104,100,100
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0xffffffc000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=96.0 total=96.0 w(a,b0,b1,r0,r1)=44,104,104,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0x1 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=136.0 total=136.0 w(a,b0,b1,r0,r1)=44,4,4,100,100
+appended 25 rows to results/baseline_ifma_lo.csv
+op=ifma_lo d1=0xa205b064 d2=0x8000000000000 c=0xaaaaaaaaaaaaa toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=44,4,4,104,104
+appended 25 rows to results/baseline_ifma_lo.csv
