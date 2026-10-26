@@ -1,0 +1,312 @@
+op=fma d1=0x0 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,56,56,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,152,152,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,144,144,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,240,240,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,64,64,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,48,48,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x0 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=0,64,64,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=56,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=64.0 total=64.0 w(a,b0,b1,r0,r1)=56,56,56,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=56,144,144,32,32
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=64.0 total=64.0 w(a,b0,b1,r0,r1)=56,152,152,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=160.0 total=160.0 w(a,b0,b1,r0,r1)=56,152,152,80,80
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=56,144,144,88,88
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=160.0 total=160.0 w(a,b0,b1,r0,r1)=56,144,144,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=56,152,152,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=112.0 total=112.0 w(a,b0,b1,r0,r1)=56,144,144,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=64.0 total=64.0 w(a,b0,b1,r0,r1)=56,240,240,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=56,64,64,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=56,48,48,48,48
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x3f800000 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=464.0 total=464.0 w(a,b0,b1,r0,r1)=56,64,64,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=8,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=48.0 total=48.0 w(a,b0,b1,r0,r1)=8,56,56,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=32.0 total=32.0 w(a,b0,b1,r0,r1)=8,144,144,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=8,152,152,240,240
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=96.0 total=96.0 w(a,b0,b1,r0,r1)=8,152,152,192,192
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=128.0 total=128.0 w(a,b0,b1,r0,r1)=8,144,144,192,192
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=8,144,144,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=8,152,152,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=8,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=160.0 total=160.0 w(a,b0,b1,r0,r1)=8,240,240,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=64.0 total=64.0 w(a,b0,b1,r0,r1)=8,64,64,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=8,48,48,16,16
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40000000 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=480.0 total=480.0 w(a,b0,b1,r0,r1)=8,64,64,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=16,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=368.0 total=368.0 w(a,b0,b1,r0,r1)=16,56,56,152,152
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=160.0 total=160.0 w(a,b0,b1,r0,r1)=16,144,144,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=16,152,152,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=16,152,152,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=432.0 total=432.0 w(a,b0,b1,r0,r1)=16,144,144,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=16,144,144,64,64
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=16,152,152,48,48
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=16,144,144,80,80
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=480.0 total=480.0 w(a,b0,b1,r0,r1)=16,240,240,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=352.0 total=352.0 w(a,b0,b1,r0,r1)=16,64,64,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=16,48,48,24,24
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40400000 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=128.0 total=128.0 w(a,b0,b1,r0,r1)=16,64,64,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=24,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=24,56,56,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=24,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=24,152,152,32,32
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=448.0 total=448.0 w(a,b0,b1,r0,r1)=24,152,152,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=496.0 total=496.0 w(a,b0,b1,r0,r1)=24,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=368.0 total=368.0 w(a,b0,b1,r0,r1)=24,144,144,56,56
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=24,152,152,56,56
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=24,144,144,72,72
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=160.0 total=160.0 w(a,b0,b1,r0,r1)=24,240,240,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=24,64,64,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=24,48,48,32,32
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40a00000 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=144.0 total=144.0 w(a,b0,b1,r0,r1)=24,64,64,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=32,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=448.0 total=448.0 w(a,b0,b1,r0,r1)=32,56,56,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=32,144,144,200,200
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=432.0 total=432.0 w(a,b0,b1,r0,r1)=32,152,152,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=368.0 total=368.0 w(a,b0,b1,r0,r1)=32,152,152,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=32,144,144,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=368.0 total=368.0 w(a,b0,b1,r0,r1)=32,144,144,152,152
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=32,152,152,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=32,144,144,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=32,240,240,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=432.0 total=432.0 w(a,b0,b1,r0,r1)=32,64,64,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=32,48,48,40,40
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40e00000 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=432.0 total=432.0 w(a,b0,b1,r0,r1)=32,64,64,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=40,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=400.0 total=400.0 w(a,b0,b1,r0,r1)=40,56,56,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=40,144,144,208,208
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=40,152,152,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=40,152,152,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=352.0 total=352.0 w(a,b0,b1,r0,r1)=40,144,144,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=368.0 total=368.0 w(a,b0,b1,r0,r1)=40,144,144,88,88
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=40,152,152,88,88
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=40,144,144,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=40,240,240,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=40,64,64,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=40,48,48,48,48
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x42c20000 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=176.0 total=176.0 w(a,b0,b1,r0,r1)=40,64,64,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=64,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=192.0 total=192.0 w(a,b0,b1,r0,r1)=64,56,56,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=64,144,144,184,184
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=64,152,152,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=64,152,152,80,80
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=64,144,144,88,88
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=64,144,144,152,152
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=64,152,152,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=64,144,144,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=416.0 total=416.0 w(a,b0,b1,r0,r1)=64,240,240,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=64,64,64,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=64,48,48,72,72
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x447c4000 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=64,64,64,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=72,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=72,56,56,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=208.0 total=208.0 w(a,b0,b1,r0,r1)=72,144,144,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=72,152,152,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=72,152,152,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=72,144,144,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=352.0 total=352.0 w(a,b0,b1,r0,r1)=72,144,144,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=72,152,152,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=72,144,144,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=72,240,240,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=72,64,64,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=72,48,48,80,80
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x49742400 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=72,64,64,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=96,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=96,56,56,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=96,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=96,152,152,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=96,152,152,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=96,144,144,128,128
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=96,144,144,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=96,152,152,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=96,144,144,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=96,240,240,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=96,64,64,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=96,48,48,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x501502f9 d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=96,64,64,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=112,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=224.0 total=224.0 w(a,b0,b1,r0,r1)=112,56,56,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=112,144,144,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=384.0 total=384.0 w(a,b0,b1,r0,r1)=112,152,152,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=352.0 total=352.0 w(a,b0,b1,r0,r1)=112,152,152,80,80
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=112,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=112,144,144,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=112,152,152,72,72
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=112,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=112,240,240,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=112,64,64,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=112,48,48,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x40490fdb d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=112,64,64,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=0.0 total=0.0 w(a,b0,b1,r0,r1)=136,0,0,160,160
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=320.0 total=320.0 w(a,b0,b1,r0,r1)=136,56,56,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3faaaaaa c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=136,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3fd55555 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=136,152,152,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3fb33333 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=136,152,152,136,136
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3fcccccc c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=136,144,144,104,104
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3ff0f0f0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=336.0 total=336.0 w(a,b0,b1,r0,r1)=136,144,144,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3f8f0f0f c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=240.0 total=240.0 w(a,b0,b1,r0,r1)=136,152,152,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3ff00ff0 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=352.0 total=352.0 w(a,b0,b1,r0,r1)=136,144,144,96,96
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3fffffff c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=288.0 total=288.0 w(a,b0,b1,r0,r1)=136,240,240,112,112
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x3f800001 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=304.0 total=304.0 w(a,b0,b1,r0,r1)=136,64,64,120,120
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0x4f800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=256.0 total=256.0 w(a,b0,b1,r0,r1)=136,48,48,144,144
+appended 20 rows to run_2/baseline_fma.csv
+op=fma d1=0x4996b43f d2=0xbf800000 c=0xbfaaaaab toggle=0 toggle_a=0 | in_flips=0 res_flips=0 dest_flips=272.0 total=272.0 w(a,b0,b1,r0,r1)=136,64,64,120,120
+appended 20 rows to run_2/baseline_fma.csv
